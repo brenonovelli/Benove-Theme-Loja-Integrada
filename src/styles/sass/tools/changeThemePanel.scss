@@ -1,0 +1,142 @@
+.b9__ChangeTheme {
+  &__button {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    width: 64px;
+    height: 64px;
+    padding: 0.75rem;
+    background: #c9ff00;
+    border-radius: 50%;
+    box-shadow: -12px 12px 1rem -1rem #344803;
+    z-index: 9999;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes sonar {
+      0% {
+        opacity: 0;
+        width: calc(100% - 2rem);
+        height: calc(100% - 2rem);
+      }
+
+      75% {
+        opacity: 1;
+        width: calc(100% + 1rem);
+        height: calc(100% + 1rem);
+      }
+
+      100% {
+        opacity: 0;
+        width: calc(100% + 1.5rem);
+        height: calc(100% + 1.5rem);
+      }
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      animation: sonar 2s infinite linear;
+      border: 1px solid #c9ff00;
+    }
+
+    &:before {
+      transform: translate(-50%, -50%) scale(1.25);
+    }
+  }
+
+  &__panel {
+    position: fixed;
+    bottom: 1rem;
+    left: 2rem;
+    z-index: 9998;
+    display: flex;
+    flex-direction: column;
+
+    width: calc(100vw - 2rem);
+    max-width: 0;
+    padding: 1rem 0 1rem 0;
+    min-height: 4rem;
+    max-height: 4rem;
+
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: saturate(180%) blur(5px);
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    transition: 0.5s all cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.5);
+    transform-origin: bottom left;
+
+    header {
+      margin-bottom: 0.5rem;
+
+      strong {
+        background-color: #c9ff00;
+        color: #011016;
+        white-space: nowrap;
+      }
+    }
+
+    .wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+      align-items: center;
+      gap: 0.5rem;
+      min-width: calc(100vw - 9rem);
+
+      > button {
+        background-color: #011016;
+        color: #fafafa;
+        border-radius: 1rem;
+        padding: 0.25rem 0.75rem;
+        opacity: 0;
+        transition: 0.5s ease-in-out all;
+        font-size: 12px;
+        line-height: 1.25;
+        white-space: nowrap;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 8px;
+          transform: translate(0, -50%);
+          background-color: #011016;
+          transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) all;
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          display: inline-flex;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    body.b9_panelThemesIsOpened & {
+      max-width: 100vw;
+      padding: 1rem 2rem 1rem 5rem;
+      max-height: 100vh;
+      opacity: 1;
+      left: 1rem;
+      transform: scale(1);
+
+      .wrap {
+        > button {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

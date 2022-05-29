@@ -1,0 +1,175 @@
+:root {
+  /* Cores da marca */
+  --B9__Cor--Primaria: #b26930;
+  --B9__Cor--Secundaria: #b26930;
+  --B9__Cor--Terciaria: #78ae3f;
+  /* Cor que gere contraste sob a cor primaria */
+  --B9__Cor--Primaria-Texto: #ffffff;
+
+  /* Cores padrão */
+  --B9__Cor--Preto: 1, 16, 22;
+  --B9__Cor--Escuro: #261019;
+  --B9__Cor--Cinza: #dddddd;
+  --B9__Cor--Light: #ffefda;
+  --B9__Cor--OffWhite: #fff4e5;
+  --B9__Cor--Branco: #fff;
+  --B9__Cor--Sucesso: #4b8d18;
+
+  /* Cores de elementos globais */
+  --B9__Cor__Fundo: var(--B9__Cor--Branco);
+  --B9__Cor__Fundo-escuro: var(--B9__Cor--Terciaria);
+  --B9__Cor--Texto: rgb(var(--B9__Cor--Preto));
+  --B9__Cor--Link: var(--B9__Cor--Secundaria);
+  --B9__Cor--Botao: var(--B9__Cor--Sucesso);
+
+  /* Imagens ou fundos para elementos de apoio */
+  --B9__SimboloLogoTopoMenor: url("https://cdn.awsli.com.br/1744/1744423/arquivos/SimboloLogoTopoMenor.png");
+  --B9__ElementoApoio: url("https://cdn.awsli.com.br/1744/1744423/arquivos/elemento-apoio.svg");
+  --B9__ElementoApoio__Cinza: url("https://cdn.awsli.com.br/1744/1744423/arquivos/elemento-apoio-cinza.svg");
+
+  /**
+   ** Barra Inicial - Barra no topo com ícones de redes sociais e formas de contato. */
+  --B9__BarraInicial__Fundo: var(--B9__Cor--OffWhite);
+  --B9__BarraInicial__Texto: var(--B9__Cor--Secundaria);
+  --B9__BarraInicial__Icones: var(--B9__Cor--Terciaria);
+  --B9__BarraInicial__EspacamentoInterno: 8px 0;
+  --B9__BarraInicial__BorderRadius: 0 0 1.25rem 1.25rem;
+
+  /**
+   ** Barra Topo que aparece ao rolar a página */
+  --B9__BarraTopo__Fundo: rgba(var(--B9__Cor--Preto), 0.95);
+  --B9__BarraTopo__Texto: var(--B9__Cor--OffWhite);
+  --B9__BarraTopo__BorderRadius: 0 0 1.25rem 1.25rem;
+  --B9__BarraTopo--Espacamento: 4px 16px;
+  --B9__BarraTopo__Logo--Altura: 40px;
+  --B9__BarraTopo__Logo: var(--B9__SimboloLogoTopoMenor);
+  --B9__BarraTopo__BotaoBusca__Fundo: var(--B9__Cor--Terciaria);
+  --B9__BarraTopo__BotaoBusca__Texto: var(--B9__Cor--Texto);
+
+  /**
+   ** Cabeçalho */
+  --B9__Cabecalho__Logo_Altura: 160px;
+  --B9__Cabecalho__Fundo: var(--B9__Cor--OffWhite);
+  --B9__Cabecalho__Texto: var(--B9__Cor--Primaria);
+  --B9__Cabecalho__Carrinho__Icone_Texto: var(--B9__Cor--Light);
+  --B9__Cabecalho__Carrinho__Icone_Fundo: var(--B9__Cor--Primaria);
+  --B9__Cabecalho__Carrinho__Quantidade_Texto: var(--B9__Cor--Primaria);
+  --B9__Cabecalho__Carrinho__Quantidade_Fundo: var(--B9__Cor--Branco);
+  --B9__Cabecalho__Carrinho__BotaoInterno: var(--B9__Cor--Sucesso);
+
+  /**
+   ** Cabeçalho - Busca */
+  --B9__Busca__Fundo: var(--B9__Cor--Branco);
+  --B9__Busca__Borda: transparent;
+  --B9__Busca__Texto: var(--B9__Cor--Texto);
+  --B9__Busca__Botao_Texto: var(--B9__Cor--Branco);
+  --B9__Busca__Botao_Fundo: var(--B9__Cor--Terciaria);
+
+  /**
+   ** Barra menu principal */
+  --B9__MenuPrincipal__Fundo: var(--B9__Cor--Light);
+  --B9__MenuPrincipal__Texto: var(--B9__Cor--Texto);
+  --B9__MenuPrincipal__Seta: var(--B9__Cor--Primaria);
+  --B9__MenuPrincipal__TextoHover: var(--B9__Cor--Primaria);
+  /* Submenu 1 */
+  --B9__MenuPrincipal__Submenu__Fundo: var(--B9__Cor--Light);
+  --B9__MenuPrincipal__Submenu__Borda: var(--B9__Cor--Cinza);
+  --B9__MenuPrincipal__Submenu__Texto: var(--B9__Cor--Texto);
+  --B9__MenuPrincipal__Submenu__TextoHover: var(--B9__Cor--Primaria);
+  /* Submenu 2 */
+  --B9__MenuPrincipal__Submenu3__Fundo: var(--B9__Cor--Light);
+  --B9__MenuPrincipal__Submenu3__Borda: var(--B9__Cor--Cinza);
+  --B9__MenuPrincipal__Submenu3__Texto: var(--B9__Cor--Texto);
+  --B9__MenuPrincipal__Submenu3__TextoHover: var(--B9__Cor--Primaria);
+
+  /**
+   ** Barra mobile */
+  --B9__BarraMobile__Fundo: var(--B9__Cor--Secundaria);
+  --B9__BarraMobile__Texto: var(--B9__Cor--Branco);
+
+  /**
+   ** Menu mobile */
+  --B9__MenuMobile__Fundo: var(--B9__Cor--Branco);
+  --B9__MenuMobile__Texto: var(--B9__Cor--Texto);
+  --B9__MenuMobile__Borda: var(--B9__Cor--Primaria);
+  --B9__MenuMobile__Botao_Fundo: var(--B9__Cor--Primaria);
+  --B9__MenuMobile__Botao_Texto: var(--B9__Cor--Branco);
+
+  /**
+   ** Full banner */
+  --B9__FullBanner_Altura-desktop: 600px;
+  --B9__FullBanner_Altura-mobile: 320px;
+  --B9__FullBanner_Altura-mobileSmall: 220px;
+  --B9__FullBanner_BorderRadius: 0;
+  --B9__FullBanner_Margin: 0 auto;
+  --B9__FullBanner_MaxWidth: 100vw;
+
+  /**
+   ** Mini banner */
+  --B9__MiniBanner_Fundo: var(--B9__Cor--Branco);
+
+  /**
+   ** Banner tarja */
+  --B9__BannerTarja_Fundo: var(--B9__Cor--Branco);
+
+  /**
+  ** Corpo */
+  --B9__Corpo__Fundo: var(--B9__Cor--Branco);
+
+  /**
+  ** Listagem */
+  --B9__Listagem__Produtos_PorLinha: 2;
+  --B9__Listagem__Produtos_DuplaPorLinha: 2;
+  --B9__Listagem__Titulo_ElementoApoio: var(--B9__ElementoApoio);
+  --B9__Listagem__Produto__Titulo__Fonte: 1rem;
+  --B9__Listagem__Produto__Titulo__Peso: 500;
+  --B9__Listagem__Imagem__BorderRadius: 8px;
+  /*  Foto vertical */
+  --B9__Listagem__Imagem_Altura_Desktop: 40rem;
+  --B9__Listagem__Imagem_Altura_Tablet: 15rem;
+  --B9__Listagem__Imagem_Altura_Mobile: 10rem;
+  /*  Foto quadrado responsiva */
+  --B9__Listagem__Imagem_Altura_Desktop: auto;
+  --B9__Listagem__Imagem_Altura_Tablet: auto;
+  --B9__Listagem__Imagem_Altura_Mobile: auto;
+  --B9__Listagem__Destaques__Hover__Fundo: var(--B9__Cor--Terciaria);
+  --B9__Listagem__Destaques__Hover__Texto: var(--B9__Cor--Texto);
+  --B9__Listagem__Tag__Fundo-Padrao: var(--B9__Cor--Secundaria);
+  --B9__Listagem__Tag__Fundo-Promocao: var(--B9__Cor--Primaria);
+  --B9__Listagem__Tag__Fundo-Adicionado: var(--B9__Cor--Secundaria);
+  --B9__Listagem__Tag__Fundo-FreteGratis: var(--B9__Cor--Terciaria);
+
+  /**
+  ** Rodapé */
+  --B9__Rodape__Fundo: var(--B9__Cor--Light);
+  --B9__Rodape__Padrao__Display: block;
+  --B9__Rodape__Padrao__URL: url("https://cdn.awsli.com.br/1744/1744423/arquivos/pattern2.png");
+  --B9__Rodape__Padrao__Fundo: var(--B9__Cor--Escuro);
+  --B9__Rodape__Padrao__Fundo_Tamanho: 5rem;
+  --B9__Rodape__UltimaLinha_Fundo: var(--B9__Cor--Primaria);
+  --B9__Rodape__UltimaLinha_Texto: var(--B9__Cor--Light);
+  --B9__Rodape__UltimaLinha_Link: var(--B9__Cor--Light);
+
+  /**
+  ** Institucional rodapé */
+  --B9__Rodape__Institucional__Fundo: var(--B9__Cor--Branco);
+  --B9__Rodape__Institucional__Titulo: var(--B9__Cor--Escuro);
+  --B9__Rodape__Institucional__Borda: var(--B9__Cor--Light);
+  --B9__Rodape__Institucional__Texto: rgb(var(--B9__Cor--Preto));
+
+  /**
+  ** Produtos */
+  --B9__Produto__Variacoes__Fundo: var(--B9__Cor--Light);
+  --B9__Produto__Variacoes__Texto_Cor: var(--B9__Cor--Texto);
+  --B9__Produto__Variacoes__Fundo_Ativo: var(--B9__Cor--Secundaria);
+  --B9__Produto__Variacoes__Texto_Cor_Ativo: var(--B9__Cor--Escuro);
+  --B9__Produto__Variacoes__BorderRadius: 1rem;
+
+  /**
+  ** Padrão produtos */
+  --B9__Produto__Padrao__Fundo: var(--B9__Cor--OffWhite);
+  --B9__Produto__Padrao__Sobreposicao_Cor: var(--B9__Cor--OffWhite);
+  --B9__Produto__Padrao__Sobreposicao_Opacidade: 0.75;
+  --B9__Produto__Padrao__URL: url("https://cdn.awsli.com.br/1744/1744423/arquivos/pattern2.png");
+  --B9__Produto__Padrao__Fundo_Tamanho: 5rem;
+}

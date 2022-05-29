@@ -1,0 +1,70 @@
+.busca {
+  padding: 0;
+  background: transparent;
+  border: 1px solid var(--B9-Busca__Borda);
+  border-radius: var(--B9-Busca__BorderRadius_out);
+
+  &:focus-within {
+    border-color: var(--B9-Busca__Borda_Focus);
+  }
+
+  input {
+    border-radius: var(--B9-Busca__BorderRadius);
+    padding: 0 1rem;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--B9-Busca__Fundo);
+    color: var(--B9-Busca__Texto);
+    box-shadow: none !important;
+
+    transition: all 0.2s ease-in-out;
+
+    &:focus {
+      background: var(--B9-Busca__Fundo_Focus);
+    }
+
+    &::placeholder {
+      color: var(--B9-Busca__Texto);
+      font-weight: normal;
+      opacity: 0.5;
+    }
+  }
+
+  .botao-busca {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+
+    background: var(--B9-Busca__Botao_Fundo);
+    color: var(--B9-Busca__Botao_Texto);
+
+    transition: all 0.2s ease-in-out;
+
+    * {
+      color: var(--B9-Busca__Botao_Texto);
+    }
+
+    svg {
+      width: 1.125rem;
+      height: 1.125rem;
+    }
+
+    &:before {
+      content: "";
+    }
+  }
+}

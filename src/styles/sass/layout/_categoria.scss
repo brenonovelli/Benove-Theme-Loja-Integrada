@@ -1,0 +1,121 @@
+.pagina-marca,
+.pagina-categoria,
+.pagina-busca {
+  #corpo {
+    .conteiner {
+      padding: 1rem;
+
+      @include media-breakpoint-down(md) {
+        .breadcrumbs {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.ordenar-listagem {
+  label {
+    font-size: 0.75rem;
+    background: var(--B9-Cor--Light);
+    border: none;
+  }
+
+  .btn.dropdown-toggle {
+    height: 100%;
+  }
+
+  .filtro-mobile {
+    margin-bottom: 1rem;
+  }
+
+  .filtro-mobile-itens {
+    box-shadow: 0 1rem 3rem -2.5rem rgba(0, 0, 0, 0);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out all;
+    margin: 0 -1rem -0.675rem;
+
+    display: block;
+
+    &.active {
+      box-shadow: 0 1rem 3rem -2.5rem rgba(0, 0, 0, 0.5);
+      padding: 0.75rem 1rem 1rem;
+      max-height: 100vh;
+      opacity: 1;
+    }
+
+    h4 {
+      text-align: center;
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .filtro-coluna {
+      &:not(:first-child) {
+        padding-top: 1rem;
+      }
+    }
+
+    .filtro.lista ul {
+      justify-content: center;
+      li {
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+.pagina-marca {
+  @media (min-width: 768px) {
+    .listagem {
+      > ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+.pagina-busca {
+  h1 {
+    max-width: 480px;
+
+    @include iconTitle;
+  }
+
+  .conteudo {
+    ol {
+      margin-left: 0;
+      margin-bottom: 3rem;
+      li {
+        list-style: none;
+        padding-left: 1.5rem !important;
+        margin: 0.5rem 0 !important;
+        position: relative;
+
+        &::before {
+          background: var(--B9-ElementoApoio__Cinza) no-repeat center center;
+          background-size: contain;
+          height: 1rem;
+          width: 1rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          content: "";
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .lateral {
+      padding: 1rem;
+
+      .filtro.lista ul li a label {
+        line-height: 1.25;
+      }
+    }
+  }
+}

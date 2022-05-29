@@ -1,0 +1,39 @@
+.atributos {
+  ul {
+    li {
+      &.active {
+        background: var(--B9-Cor--Primaria);
+        color: #fff;
+        border: none;
+      }
+
+      a {
+        &:hover {
+          .listagem & {
+            background: var(--B9-Cor--Primaria);
+            color: #fff;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.atributo-comum {
+  a {
+    &:hover {
+      span {
+        color: #fff;
+      }
+    }
+  }
+
+  .active {
+    a {
+      span {
+        color: #fff;
+      }
+    }
+  }
+}

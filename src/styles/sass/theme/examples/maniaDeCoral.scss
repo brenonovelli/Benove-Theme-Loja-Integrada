@@ -1,0 +1,265 @@
+body[data-b9-theme="maniaDeCoral"] {
+  /* Cores da marca */
+  --B9-Cor--Primaria: #52d5cf;
+  --B9-Cor--Secundaria: #d48cf0;
+  --B9-Cor--Terciaria: #e783cb;
+  /* Cor que gere contraste sob a cor primaria */
+  --B9-Cor--Primaria-Texto: #0a9fa2;
+
+  /* Cores padrão */
+  --B9-Cor--Preto: 1, 16, 22;
+  --B9-Cor--Escuro: #261019;
+  --B9-Cor--Cinza: #dddddd;
+  --B9-Cor--Light: #f2fffe;
+  --B9-Cor--OffWhite: #fcfcfc;
+  --B9-Cor--Branco: #fff;
+  --B9-Cor--Sucesso: #4b8d18;
+
+  /* Cores de elementos globais */
+  --B9-Cor--Fundo: var(--B9-Cor--Branco);
+  --B9-Cor--Fundo-escuro: var(--B9-Cor--Primaria-Texto);
+  --B9-Cor--Texto: #847676;
+  --B9-Cor--Texto-FundoEscuro: #e2ccdc;
+  --B9-Cor--Titulo: var(--B9-Cor--Primaria);
+  --B9-Cor--Link: var(--B9-Cor--Primaria);
+  --B9-Cor--Botao: var(--B9-Cor--Sucesso);
+
+  /* Imagens ou fundos para elementos de apoio */
+  --B9-SimboloLogoTopoMenor: url("https://cdn.awsli.com.br/1606/1606323/arquivos/maniaDeCoral_icon.png");
+  --B9-ElementoApoio: url("https://cdn.awsli.com.br/1606/1606323/arquivos/maniaDeCoral_icon.png");
+  --B9-ElementoApoio__Cinza: url("https://cdn.awsli.com.br/1606/1606323/arquivos/maniaDeCoral_icon.png");
+  --B9-Pattern__01: url("https://cdn.awsli.com.br/1606/1606323/arquivos/nature_pattern_green_cacto.png");
+  --B9-Pattern__02: url("https://cdn.awsli.com.br/1606/1606323/arquivos/pattern_pink.png");
+
+  /* BG Topo */
+  --B9-Header_BG: none;
+  --B9-Header_Color: var(--B9-Cor--Light);
+  --B9-Header_BG_Mobile: url("https://cdn.awsli.com.br/1606/1606323/arquivos/pattern_pink.png") top center fixed;
+  --B9-Header_Color_Mobile: var(--B9-Cor--Light);
+
+  /**
+   ** Barra Inicial - Barra no topo com ícones de redes sociais e formas de contato. */
+  --B9-BarraInicial__Fundo: var(--B9-Cor--Secundaria);
+  --B9-BarraInicial__Margin: 0 0 -2rem;
+  --B9-BarraInicial__BorderBottom: transparent;
+  --B9-BarraInicial__Texto: var(--B9-Cor--Branco);
+  --B9-BarraInicial__Icones: var(--B9-Cor--Branco);
+  --B9-BarraInicial__EspacamentoInterno: 1rem;
+  --B9-BarraInicial__BorderRadius: 0 0 2rem 2rem;
+
+  /**
+   ** Cabeçalho */
+  --B9-Cabecalho__Altura: 200px;
+  --B9-Cabecalho__Altura_PaginasInternas: auto;
+  --B9-Cabecalho__Logo_Altura: 200px;
+  --B9-Cabecalho__Fundo: var(--B9-Header_Color) var(--B9-Header_BG);
+  --B9-Cabecalho__Fundo_Mobile: var(--B9-Header_BG_Mobile) var(--B9-Header_Color_Mobile);
+  --B9-Cabecalho__Fundo_Size: 600px;
+  --B9-Cabecalho__Fundo_Size_Mobile: 600px;
+  --B9-Cabecalho__Texto: var(--B9-Cor--Texto);
+  --B9-Cabecalho__Benvindo__Texto: var(--B9-Cor--Texto);
+  --B9-Cabecalho__Benvindo__Link: var(--B9-Cor--Texto);
+  --B9-Cabecalho__Carrinho__Icone_Texto: var(--B9-Cor--Primaria-Texto);
+  --B9-Cabecalho__Carrinho__Icone_Fundo: var(--B9-Cor--Primaria);
+  --B9-Cabecalho__Carrinho__Quantidade_Texto: var(--B9-Cor--Branco);
+  --B9-Cabecalho__Carrinho__Quantidade_Fundo: var(--B9-Cor--Secundaria);
+  --B9-Cabecalho__Carrinho__BotaoInterno: var(--B9-Cor--Sucesso);
+  --B9-Cabecalho__Dropdown_Profile_BG: var(--B9-Cor--Primaria);
+  --B9-Cabecalho__Dropdown_Profile_Text: var(--B9-Cor--Primaria-Texto);
+  --B9-Cabecalho__Dropdown_Profile_BGInner: rgb(var(--B9-Cor--Preto));
+  --B9-Cabecalho__Dropdown_Profile_TextInner: var(--B9-Cor--Branco);
+  --B9-Cabecalho__Dropdown_Profile_BorderSize: 4px;
+  --B9-Cabecalho__Dropdown_Profile_Border: solid var(--B9-Cor--Primaria);
+  --B9-Cabecalho__Dropdown_Profile_BorderRadius: 1rem;
+
+  /**
+   ** Cabeçalho - Busca */
+  --B9-Busca__Fundo: rgba(255, 200, 255, 0.25);
+  --B9-Busca__Fundo_Focus: rgba(255, 200, 255, 0.5);
+  --B9-Busca__Borda: var(--B9-Cor--Secundaria);
+  --B9-Busca__Borda_Focus: var(--B9-Cor--Terciaria);
+  --B9-Busca__BorderRadius_out: 20px;
+  --B9-Busca__BorderRadius: 19px;
+  --B9-Busca__Texto: var(--B9-Cor--Escuro);
+  --B9-Busca__Botao_Texto: var(--B9-Cor--Primaria-Texto);
+  --B9-Busca__Botao_Fundo: var(--B9-Cor--Primaria);
+
+  /**
+   ** Barra Topo que aparece ao rolar a página */
+   --B9-BarraTopo__Fundo: var(--B9-Cor--Texto-FundoEscuro);
+   --B9-BarraTopo__Texto: var(--B9-Cor--Escuro);
+   --B9-BarraTopo__BorderRadius: 0 0 1.25rem 1.25rem;
+   --B9-BarraTopo--Espacamento: 8px 16px;
+   --B9-BarraTopo__Logo--Altura: 40px;
+   --B9-BarraTopo__Logo: var(--B9-SimboloLogoTopoMenor);
+   --B9-BarraTopo__Busca__Texto: var(--B9-Cor--Escuro);
+   --B9-BarraTopo__Busca__Fundo: var(--B9-Cor--Branco);
+   --B9-BarraTopo__BotaoBusca__Fundo: var(--B9-Cor--Primaria);
+   --B9-BarraTopo__BotaoBusca__Texto: var(--B9-Cor--OffWhite);
+
+  /**
+   ** Barra menu principal */
+  --B9-MenuPrincipal__Display: block;
+  --B9-MenuPrincipal__Fundo: rgba(255, 255, 255, 0.1);
+  --B9-MenuPrincipal__Fundo_Hover: rgba(255, 255, 255, 0.75);
+  --B9-MenuPrincipal__Texto: var(--B9-Cor--Texto);
+  --B9-MenuPrincipal__Seta: var(--B9-Cor--Primaria);
+  --B9-MenuPrincipal__TextoHover: var(--B9-Cor--Primaria);
+  /* Submenu 1 */
+  --B9-MenuPrincipal__Submenu__Fundo: var(--B9-Cor--Light);
+  --B9-MenuPrincipal__Submenu__Borda: var(--B9-Cor--Cinza);
+  --B9-MenuPrincipal__Submenu__Texto: var(--B9-Cor--Texto);
+  --B9-MenuPrincipal__Submenu__TextoHover: var(--B9-Cor--Primaria);
+  /* Submenu 2 */
+  --B9-MenuPrincipal__Submenu3__Fundo: var(--B9-Cor--Light);
+  --B9-MenuPrincipal__Submenu3__Borda: var(--B9-Cor--Cinza);
+  --B9-MenuPrincipal__Submenu3__Texto: var(--B9-Cor--Texto);
+  --B9-MenuPrincipal__Submenu3__TextoHover: var(--B9-Cor--Primaria);
+
+  /**
+   ** Barra mobile */
+  --B9-BarraMobile__Fundo: var(--B9-Cor--Primaria-Texto);
+  --B9-BarraMobile__Texto: var(--B9-Cor--Branco);
+  --B9-BarraMobile__Padding: 0;
+  --B9-BarraMobile__Margin: 0;
+  --B9-BarraMobile__BorderBottom: none;
+  --B9-BarraMobile__BorderRadius: 0 0 0.75rem 0.75rem;
+
+  /**
+   ** Menu mobile */
+  --B9-MenuMobile__Fundo: var(--B9-Cor--Fundo-escuro);
+  --B9-MenuMobile__Fundo_Nivel2: rgba(255, 255, 255, 0.25);
+  --B9-MenuMobile__Titulo: var(--B9-Cor--Branco);
+  --B9-MenuMobile__Texto: var(--B9-Cor--Branco);
+  --B9-MenuMobile__Borda: var(--B9-Cor--Primaria);
+  --B9-MenuMobile__Botao_Fundo: var(--B9-Cor--Primaria);
+  --B9-MenuMobile__Botao_Texto: var(--B9-Cor--Branco);
+
+  /**
+   ** Full banner */
+  --B9-FullBanner_Altura-desktop: 600px;
+  --B9-FullBanner_Altura-mobile: 320px;
+  --B9-FullBanner_Altura-mobileSmall: 220px;
+  --B9-FullBanner_BorderRadius: 0;
+  --B9-FullBanner_Margin: 0 auto;
+  --B9-FullBanner_MaxWidth: 100vw;
+
+  /**
+   ** Mini banner */
+  --B9-MiniBanner_Fundo: var(--B9-Cor--Branco);
+
+  /**
+   ** Banner tarja */
+  --B9-BannerTarja_Fundo: var(--B9-Cor--Branco);
+
+  /**
+  ** Corpo */
+  --B9-Corpo__Fundo: var(--B9-Cor--Branco);
+
+  /**
+  ** Listagem */
+  --B9-Listagem--Produtos__Display: block;
+  --B9-Listagem--Produtos_PorLinha: 2;
+  --B9-Listagem--Produtos_DuplaPorLinha: 2;
+  --B9-Listagem--Titulo_Cor: var(--B9-Cor--Texto);
+  --B9-Listagem--Subtitulo_Cor: var(--B9-Cor--Texto);
+  --B9-Listagem--Titulo_BorderTop: 1px solid var(--B9-Cor--Light);
+  --B9-Listagem--Titulo_ElementoApoio: var(--B9-ElementoApoio) no-repeat center center ;
+  --B9-Listagem--Titulo_ElementoApoio_Content: "";
+  --B9-Listagem--Titulo_ElementoApoio_Width: 2rem;
+  --B9-Listagem--Titulo_ElementoApoio_Height: 2rem;
+  --B9-Listagem--Produto__Titulo__Fonte: 0.75rem;
+  --B9-Listagem--Produto__Titulo__Peso: 500;
+  --B9-Listagem--BG: var(--B9-Cor--Fundo);
+  --B9-Listagem--BoxShadow: 0 40px 30px -10px rgba(0, 0, 0, 0.05);
+  --B9-Listagem--BoxShadow_Mobile:  0 40px 30px -10px rgba(0, 0, 0, 0.05);
+  --B9-Listagem--Imagem__BorderRadius: 8px;
+  --B9-Listagem--Destaques__BorderRadius: 0 0 0.5rem 0.5rem;
+  --B9-Listagem--Destaques__Padding: 0 10px;
+  --B9-Listagem--Destaques__Fundo: var(--B9-Cor--Light);
+  --B9-Listagem--Destaques__Texto: var(--B9-Cor--Texto);
+  --B9-Listagem--Destaques__Hover__Fundo: var(--B9-Cor--Primaria);
+  --B9-Listagem--Destaques__Hover__Texto: var(--B9-Cor--Branco);
+  --B9-Listagem--PrecoProduto__Fundo: var(--B9-Cor--Secundaria);
+  --B9-Listagem--PrecoProduto__Texto: var(--B9-Cor--Branco);
+  --B9-Listagem--PrecoProduto__Hover__Fundo: var(--B9-Cor--Secundaria);
+  --B9-Listagem--PrecoProduto__Hover__Texto: var(--B9-Cor--Branco);
+  --B9-Listagem--Tag__Fundo-Padrao: var(--B9-Cor--Secundaria);
+  --B9-Listagem--Tag__Fundo-Promocao: var(--B9-Cor--Primaria-Texto);
+  --B9-Listagem--Tag__Fundo-Adicionado: var(--B9-Cor--Secundaria);
+  --B9-Listagem--Tag__Fundo-FreteGratis: var(--B9-Cor--Terciaria);
+  /*  Foto vertical */
+  --B9-Listagem--Imagem_ObjectFit: cover;
+  --B9-Listagem--Imagem_Altura_Desktop: 40rem;
+  --B9-Listagem--Imagem_Altura_Tablet: 15rem;
+  --B9-Listagem--Imagem_Altura_Mobile: 10rem;
+  /*  Foto quadrado responsiva deixar tudo auto */
+  --B9-Listagem--Imagem_Altura_Desktop: auto;
+  --B9-Listagem--Imagem_Altura_Tablet: auto;
+  --B9-Listagem--Imagem_Altura_Mobile: auto;
+
+  /**
+  ** Rodapé */
+  --B9-Rodape__Fundo: var(--B9-Cor--Light);
+  --B9-Rodape__Sombra: 0 1rem 4rem -2.4rem rgba(0, 0, 0, 0.2);
+  --B9-Rodape__Padrao__Display: block;
+  --B9-Rodape__Padrao__URL: var(--B9-Pattern__01);
+  --B9-Rodape__Padrao__Fundo: #75e9e3;
+  --B9-Rodape__Padrao__Fundo_Tamanho: 600px;
+  --B9-Rodape__Padrao__Height: 75vh;
+  --B9-Rodape__UltimaLinha_Fundo: rgb(var(--B9-Cor--Preto));
+  --B9-Rodape__UltimaLinha_Texto: var(--B9-Cor--Light);
+  --B9-Rodape__UltimaLinha_Link: var(--B9-Cor--Light);
+
+  /**
+  ** Institucional rodapé */
+  --B9-Rodape__Institucional__Fundo: var(--B9-Cor--Branco);
+  --B9-Rodape__Institucional__Titulo: var(--B9-Cor--Escuro);
+  --B9-Rodape__Institucional__Titulo_ElementoApoio: var(--B9-ElementoApoio)  no-repeat left center;
+  --B9-Rodape__Institucional__Titulo_ElementoApoio_Content: "";
+  --B9-Rodape__Institucional__Titulo_ElementoApoio_Width: 1.25rem;
+  --B9-Rodape__Institucional__Titulo_ElementoApoio_Height: 1.25rem;
+  --B9-Rodape__Institucional__Titulo_ElementoApoio_Transform: translate(4px, -4px);
+  --B9-Rodape__Institucional__Borda: var(--B9-Cor--Light);
+  --B9-Rodape__Institucional__Texto: rgb(var(--B9-Cor--Preto));
+  --B9-Rodape__Institucional__Botao__Fundo: var(--B9-Cor--Secundaria);
+
+  /**
+  ** Produtos */
+  --B9-Produto__Variacoes__Fundo: var(--B9-Cor--Light);
+  --B9-Produto__Variacoes__Texto_Cor: var(--B9-Cor--Texto);
+  --B9-Produto__Variacoes__Fundo_Ativo: var(--B9-Cor--Secundaria);
+  --B9-Produto__Variacoes__Texto_Cor_Ativo: var(--B9-Cor--Light);
+  --B9-Produto__Variacoes__BorderRadius: 1rem;
+
+  /**
+  ** Padrão produtos */
+  --B9-Produto__Container_BoxShadow: 0rem 0rem 16rem -3.5rem rgb(0 0 0 / 15%);
+  --B9-Produto__Container_MaxHeight: 75vh;
+  --B9-Produto__Padrao__Fundo: var(--B9-Cor--OffWhite);
+  --B9-Produto__Padrao__Sobreposicao_Cor: var(--B9-Cor--OffWhite);
+  --B9-Produto__Padrao__Sobreposicao_Opacidade: 0.95;
+  --B9-Produto__Padrao__URL: var(--B9-Pattern__02);
+  --B9-Produto__Padrao__Fundo_Tamanho: 2rem;
+
+  .b9__ChangeTheme__panel_button[data-theme="maniaDeCoral"] {
+    &:before {
+      background-color: #c9ff00 !important;
+    }
+  }
+
+  .logo {
+    a {
+      position: relative;
+      display: block;
+      background: url("https://cdn.awsli.com.br/1080x720/1944/1944627/logo/ac8c167d64.png")
+        no-repeat center center;
+      background-size: contain;
+      mix-blend-mode: unset;
+
+      img {
+        opacity: 0;
+      }
+    }
+  }
+}

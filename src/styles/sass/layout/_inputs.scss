@@ -1,0 +1,178 @@
+.form {
+  &-search input,
+  &-inline input,
+  &-horizontal input,
+  &-search textarea,
+  &-inline textarea,
+  &-horizontal textarea,
+  &-search select,
+  &-inline select,
+  &-horizontal select,
+  &-search .help-inline,
+  &-inline .help-inline,
+  &-horizontal .help-inline,
+  &-search .uneditable-input,
+  &-inline .uneditable-input,
+  &-horizontal .uneditable-input,
+  &-search .input-prepend,
+  &-inline .input-prepend,
+  &-horizontal .input-prepend,
+  &-search .input-append,
+  &-inline .input-append,
+  &-horizontal .input-append {
+    background: rgba(238, 238, 238, 0.5);
+    border: 0;
+    border-radius: 2rem;
+    box-shadow: none;
+    font-weight: 600;
+    color: #666666;
+  }
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  background: rgba(238, 238, 238, 0.5);
+  border: 0;
+  border-radius: 2rem;
+  box-shadow: none;
+  padding: 0 1rem;
+  font-weight: 600;
+  color: #666666;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  height: 3rem;
+  line-height: 3rem;
+}
+
+textarea {
+  padding: 1rem;
+  height: 6rem;
+  border-radius: 1rem 1rem 0 1rem;
+}
+
+.form-horizontal .help-inline {
+  background-color: transparent;
+}
+
+.input-append {
+  flex: 1;
+  display: flex;
+
+  input {
+    width: auto;
+    height: 3rem;
+    border-radius: 2rem 0 0 2rem;
+    border: 1px solid #dddddd;
+    box-shadow: none;
+    padding: 0 1rem;
+
+    transition: 0.2s ease all;
+
+    &:focus {
+      border-color: var(--B9-Cor--Primaria);
+    }
+  }
+  button {
+    &.btn,
+    &.btn:last-child {
+      border-radius: 0 2rem 2rem 0;
+      border: none;
+      background: var(--B9-Cor--Primaria);
+      text-shadow: none;
+      color: var(--B9-Cor--Branco);
+      font-weight: 700;
+
+      padding: 0 1rem;
+    }
+  }
+}
+
+.form-horizontal {
+  .input-append {
+    display: flex !important;
+  }
+}
+
+.campos-pedido,
+.cadastro {
+  select,
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"] {
+    margin: 0;
+    min-width: fit-content;
+    background: rgba(238, 238, 238, 0.5);
+    border: 0;
+    border-radius: 2rem;
+    height: 3rem;
+    line-height: 3rem;
+    box-shadow: none;
+    padding: 0 1rem;
+    font-weight: 600;
+    color: #666666;
+  }
+}
+
+.control-group {
+  &.erro {
+    .control-label,
+    .help-block,
+    .help-inline {
+      color: var(--B9-Cor--Primaria);
+    }
+
+    .help-block {
+      font-size: 0.8125rem;
+      font-weight: 700;
+    }
+  }
+}
+
+form {
+  .control-group {
+    &.error {
+      .control-label {
+        color: var(--B9-Cor--Primaria);
+      }
+      .errorlist {
+        color: var(--B9-Cor--Primaria);
+        font-size: 0.8125rem;
+      }
+    }
+    &.erro {
+      .errorlist {
+        color: var(--B9-Cor--Primaria);
+        font-size: 0.8125rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.modal {
+  border-radius: 1rem;
+}
+
+.modal-body {
+  > span {
+    @include iconTitle;
+    text-align: center;
+    font-size: 1.25rem !important;
+    display: block;
+  }
+}
+
+.modal-footer {
+  padding: 0;
+  padding-top: 2rem;
+  background: var(--B9-Cor--Branco);
+  border: none;
+  a {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

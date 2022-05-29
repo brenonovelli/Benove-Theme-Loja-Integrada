@@ -1,0 +1,125 @@
+#comprar-ajax-status {
+  .sucesso {
+    .head {
+      line-height: 1.5;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+
+      .ir-carrinho {
+        background-color: var(--B9-Cor--Sucesso);
+        font-size: 1rem;
+      }
+
+      > * {
+        display: flex;
+
+        + * {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.botao {
+  &:hover {
+    background-image: none;
+  }
+
+  &:not(.botao-busca) {
+    background: var(--B9-Cor--Cinza);
+    color: rgb(var(--B9-Cor--Preto));
+    border: none;
+    border-radius: 2rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    background-image: none;
+
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+      background: var(--B9-Cor--Cinza);
+    }
+  }
+
+  &.pequeno {
+    height: 2rem;
+  }
+  &.grande {
+    height: 4rem;
+  }
+
+  &.desativo {
+    opacity: 1;
+    background: var(--B9-Cor--Cinza-escuro);
+  }
+
+  &.principal {
+    background-color: var(--B9-Cor--Primaria);
+    color: var(--B9-Cor--Branco);
+    text-shadow: none;
+
+    &:hover {
+      background: var(--B9-Cor--Primaria);
+      // background: transparentize(var(--B9-Cor--Primaria), 0.2);
+    }
+
+    &.botao-comprar {
+      font-size: 18px;
+    }
+
+    &.botao-comprar,
+    &.grande {
+      background-color: var(--B9-Cor--Botao);
+      color: var(--B9-Cor--Branco);
+      border: none;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      font-weight: 700;
+      text-shadow: none;
+      font-size: 1.5rem;
+      border-radius: 2rem;
+    }
+  }
+}
+
+// Reset .btn
+.btn {
+  background: var(--B9-Cor--Primaria);
+  box-shadow: none;
+  color: var(--B9-Cor--Branco);
+  text-shadow: none;
+  border: none;
+
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    background: var(--B9-Cor--Primaria);
+    opacity: 0.9;
+    // background: darken(--B9-Cor--Primaria, 5%);
+    color: var(--B9-Cor--Branco);
+  }
+
+  &:active,
+  &:focus {
+    // background: darken(--B9-Cor--Primaria, 7.5%);
+    background: var(--B9-Cor--Primaria);
+    opacity: 0.8;
+    color: var(--B9-Cor--Branco);
+    outline: none;
+  }
+
+  .open & {
+    &.dropdown-toggle {
+      // background: darken(--B9-Cor--Primaria, 10%) !important;
+      background: var(--B9-Cor--Primaria) !important;
+      opacity: 0.7;
+    }
+  }
+}

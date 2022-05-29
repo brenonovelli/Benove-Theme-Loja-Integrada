@@ -1,0 +1,9 @@
+{
+  "name": "benove-tema-loja-integrada",
+  "version": "0.0.1",
+  "description": "Um simples tema para lojas que usam a plataforma da Loja Integrada",
+  "main": "index.js",
+  "author": "Breno Novelli",
+  "license": "MIT",
+  "private": true
+}

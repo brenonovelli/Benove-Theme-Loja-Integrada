@@ -1,0 +1,113 @@
+:root {
+  --cor-primaria: #b26930;
+  --cor-secundaria: #b26930;
+  --cor-terciaria: #78ae3f;
+  --cor-preto: #211700;
+  --cor-escuro: #28180b;
+  --cor-cinza: #dddddd;
+  --cor-light: #ffefda;
+  --cor-offWhite: #fff4e5;
+  --cor-branco: #fff;
+  --cor-Fundo: var(--cor-branco);
+  --cor-Fundo-escuro: #211700;
+  --cor-Texto: var(--cor-preto);
+  --cor-link: var(--cor-secundaria);
+  --cor-Botao: var(--cor-terciaria);
+  /* Elementos de apoio */
+  --B9__SimboloLogoTopoMenor: url("https://cdn.awsli.com.br/1744/1744423/arquivos/SimboloLogoTopoMenor.png");
+  --B9__ElementoApoio: url("https://cdn.awsli.com.br/1744/1744423/arquivos/elemento-apoio.svg");
+  --B9__ElementoApoio__Cinza: url("https://cdn.awsli.com.br/1744/1744423/arquivos/elemento-apoio-cinza.svg");
+  /**
+   ** Barra Inicial - Barra no topo com ícones de redes sociais e formas de contato. */
+  --B9__BarraInicial__Fundo: var(--cor-offWhite);
+  --B9__BarraInicial__Texto: var(--cor-secundaria);
+  --B9__BarraInicial__Icones: var(--cor-terciaria);
+  --B9__BarraInicial__EspacamentoInterno: 8px 0;
+  /**
+   ** Cabeçalho */
+  --B9__Cabecalho__Fundo: var(--cor-offWhite);
+  --B9__Cabecalho__Texto: var(--cor-secundaria);
+  --B9__Cabecalho__Logo_Altura: 160px;
+  --B9__Cabecalho__Carrinho__Icone_Texto: var(--cor-branco);
+  --B9__Cabecalho__Carrinho__Icone_Fundo: var(--cor-secundaria);
+  --B9__Cabecalho__Carrinho__Quantidade_Texto: var(--cor-branco);
+  --B9__Cabecalho__Carrinho__Quantidade_Fundo: var(--cor-terciaria);
+  --B9__Cabecalho__Carrinho__BotaoInterno: var(--cor-terciaria);
+  /**
+   ** Cabeçalho interno */
+  --B9__Cabecalho__Titulo_ElementoApoio: var(--B9__ElementoApoio);
+  /**
+   ** Cabeçalho - Busca */
+  --B9__Busca__Fundo: var(--cor-branco);
+  --B9__Busca__Borda: var(--cor-light);
+  --B9__Busca__Texto: var(--cor-Texto);
+  --B9__Busca__Botao_Texto: var(--cor-branco);
+  --B9__Busca__Botao_Fundo: var(--cor-terciaria);
+  /**
+   ** Barra menu principal */
+  --B9__MenuPrincipal__Fundo: var(--cor-light);
+  --B9__MenuPrincipal__Texto: var(--cor-Texto);
+  --B9__MenuPrincipal__TextoHover: var(--cor-primaria);
+  --B9__MenuPrincipal__Submenu__Fundo: var(--cor-branco);
+  --B9__MenuPrincipal__Submenu__Texto: var(--cor-Texto);
+  --B9__MenuPrincipal__Submenu__Borda: var(--cor-secundaria);
+  /**
+   ** Barra mobile */
+  --B9__BarraMobile__Fundo: var(--cor-secundaria);
+  --B9__BarraMobile__Texto: var(--cor-light);
+  /**
+   ** Menu mobile */
+  --B9__MenuMobile__Fundo: var(--cor-branco);
+  --B9__MenuMobile__Texto: var(--cor-Texto);
+  --B9__MenuMobile__Borda: var(--cor-primaria);
+  --B9__MenuMobile__Botao_Fundo: var(--cor-secundaria);
+  --B9__MenuMobile__Botao_Texto: var(--cor-branco);
+  /**
+   ** Barra Topo */
+  --B9__BarraTopo__Fundo: var(--cor-escuro);
+  --B9__BarraTopo__Texto: var(--cor-light);
+  /**
+   ** Mini banner */
+  --B9__MiniBanner_Fundo: var(--cor-branco);
+  /**
+   ** Banner tarja */
+  --B9__BannerTarja_Fundo: var(--cor-branco);
+  /**
+  ** Corpo */
+  --B9__Corpo__Fundo: var(--cor-branco);
+  /**
+  ** Listagem */
+  --B9__Listagem__Imagem_Altura_Desktop: 20rem;
+  --B9__Listagem__Imagem_Altura_Tablet: 15rem;
+  --B9__Listagem__Imagem_Altura_Mobile: 10rem;
+  /**
+  ** Padrão rodapé */
+  --B9__Rodape__Fundo: var(--cor-light);
+  --B9__Rodape__Padrao__Display: block;
+  --B9__Rodape__Padrao__URL: url("https://cdn.awsli.com.br/1744/1744423/arquivos/pattern2.png");
+  --B9__Rodape__Padrao__Fundo: var(--cor-primaria);
+  --B9__Rodape__Padrao__Fundo_Tamanho: 5rem;
+  --B9__Rodape__UltimaLinha_Fundo: var(--cor-secundaria);
+  --B9__Rodape__UltimaLinha_Texto: var(--cor-light);
+  --B9__Rodape__UltimaLinha_Link: var(--cor-light);
+  /**
+  ** Institucional rodapé */
+  --B9__Rodape__Institucional__Fundo: var(--cor-branco);
+  --B9__Rodape__Institucional__Titulo: var(--cor-escuro);
+  --B9__Rodape__Institucional__Borda: var(--cor-light);
+  --B9__Rodape__Institucional__Texto: var(--cor-preto);
+  /**
+  ** Produtos */
+  --B9__Produto__Variacoes__Fundo: var(--cor-Fundo);
+  --B9__Produto__Variacoes__Texto_Cor: var(--cor-Texto);
+  --B9__Produto__Variacoes__Fundo_Ativo: var(--cor-terciaria);
+  --B9__Produto__Variacoes__Texto_Cor_Ativo: var(--cor-branco);
+  --B9__Produto__Variacoes__BorderRadius: 1rem;
+  /**
+  ** Padrão produtos */
+  --B9__Produto__Padrao__Fundo: var(--cor-branco);
+  --B9__Produto__Padrao__Sobreposicao_Cor: var(--cor-offWhite);
+  --B9__Produto__Padrao__Sobreposicao_Opacidade: 0.95;
+  --B9__Produto__Padrao__URL: url("https://cdn.awsli.com.br/1744/1744423/arquivos/pattern2.png");
+  --B9__Produto__Padrao__Fundo_Tamanho: 5rem;
+}

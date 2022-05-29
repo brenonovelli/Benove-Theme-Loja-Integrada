@@ -1,0 +1,123 @@
+.caixa-sombreada {
+  box-shadow: 0 1rem 4rem -2.4rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--B9-Cor--Branco);
+}
+
+.pagina-conta-endereco,
+.pagina-login,
+.pagina-cadastro {
+  #corpo {
+    .conteiner {
+      padding: 1rem;
+      max-width: 1140px;
+    }
+  }
+}
+
+.pagina-login {
+  #corpo {
+    .conteiner {
+      .cadastro-logar {
+        .control-group {
+          display: flex;
+
+          @include media-breakpoint-down(md) {
+            flex-direction: column;
+          }
+
+          .control-label {
+            width: 4rem;
+            text-align: right;
+            padding: 0.75rem 0.5rem 0 0;
+            margin: 0;
+            font-weight: 600;
+            float: none;
+          }
+
+          .controls {
+            margin-left: 0;
+            flex: 1;
+
+            @include media-breakpoint-down(md) {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-end;
+            }
+
+            input {
+              width: 100%;
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+
+        > .span6 {
+          > div {
+            box-shadow: 0 1rem 4rem -2.4rem rgba(0, 0, 0, 0.2);
+            border-radius: 2rem;
+            border: none;
+          }
+        }
+
+        .recuperar-senha {
+          margin: 2rem auto 0;
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.cadastro {
+  label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--B9-Cor--Escuro);
+  }
+}
+
+.pagina-cadastro {
+  #corpo {
+    .conteiner {
+      .dados-acesso {
+        background-color: var(--B9-Cor--Branco);
+      }
+
+      .cadastro {
+        .politica-privacidade-field {
+          * {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--B9-Cor--Texto);
+          }
+        }
+      }
+
+      .acao-editar {
+        .offset8,
+        .offset9 {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.pagina-conta-endereco {
+  #id_cep + a {
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .acao-editar {
+    .offset8,
+    .offset9 {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}

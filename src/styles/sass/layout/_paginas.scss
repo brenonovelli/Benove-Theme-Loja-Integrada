@@ -1,0 +1,11 @@
+.pagina-pagina {
+  #corpo {
+    .conteiner {
+      max-width: 1140px;
+
+      h1 {
+        @include iconTitle;
+      }
+    }
+  }
+}

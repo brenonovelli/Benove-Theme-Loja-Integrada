@@ -1,0 +1,12 @@
+#corpo {
+  background: var(--B9-Corpo__Fundo);
+
+  .conteiner {
+    max-width: 100vw;
+    padding: 0;
+
+    &.storiesWrapper {
+      max-width: 1140px;
+    }
+  }
+}

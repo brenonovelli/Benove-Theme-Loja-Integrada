@@ -1,0 +1,98 @@
+/*******
+    S E Ç Ã O   B A N N E R S
+    **********/
+
+.secao-banners {
+  .conteiner {
+    max-width: 100vw;
+    padding: 0;
+    .banner {
+      &.cheio {
+        overflow: hidden;
+
+        height: var(--B9-FullBanner_Altura-mobileSmall);
+
+        border-radius: var(--B9-FullBanner_BorderRadius);
+        margin: var(--B9-FullBanner_Margin);
+        max-width: var(--B9-FullBanner_MaxWidth);
+
+        @include media-breakpoint-up(sm) {
+          height: var(--B9-FullBanner_Altura-mobile);
+        }
+
+        @include media-breakpoint-up(md) {
+          height: var(--B9-FullBanner_Altura-desktop);
+        }
+
+        > div {
+          @include transform(translateY(-50%));
+          top: 50%;
+          position: relative;
+          height: 100%;
+
+          @include media-breakpoint-up(md) {
+            height: var(--B9-FullBanner_Altura-desktop);
+          }
+        }
+
+        div.flexslider {
+          border: none;
+          border-radius: 0;
+          height: 100%;
+
+          .slides {
+            height: 100%;
+            li {
+              height: 100%;
+              img {
+                object-fit: cover;
+
+                height: var(--B9-FullBanner_Altura-mobileSmall);
+
+                @include media-breakpoint-up(sm) {
+                  height: var(--B9-FullBanner_Altura-mobile);
+                }
+
+                @include media-breakpoint-up(md) {
+                  height: var(--B9-FullBanner_Altura-desktop);
+                }
+              }
+            }
+          }
+        }
+
+        & + .row-fluid {
+          margin-top: 0;
+        }
+      }
+
+      &.tarja {
+        height: auto;
+        width: 100vw;
+        background: var(--B9-BannerTarja_Fundo);
+
+        img {
+          max-width: 100vw;
+          margin: 0 auto;
+          display: block;
+        }
+      }
+
+      &.mini-banner {
+        background-color: var(--B9-MiniBanner_Fundo);
+        display: flex !important;
+        padding: 1rem;
+        margin: 0;
+
+        @include media-breakpoint-down(sm) {
+          flex-direction: column;
+        }
+
+        img {
+          max-width: 383px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

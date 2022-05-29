@@ -1,0 +1,244 @@
+#rodape {
+  background: var(--B9-Rodape__Fundo);
+  padding-top: 2rem;
+
+  @include media-breakpoint-up(md) {
+    padding-top: 3rem;
+  }
+
+  .institucional {
+    box-shadow: var(--B9-Rodape__Sombra);
+    background-image: none;
+    background: var(--B9-Rodape__Institucional__Fundo);
+    padding: 1rem 0;
+    max-width: calc(100vw - 2rem);
+    margin: 0 auto;
+    border-radius: 2rem;
+
+    @include media-breakpoint-up(md) {
+      width: 1280px;
+      max-width: calc(100vw - 4rem);
+    }
+
+    // Reset widths
+    > .conteiner {
+      @include media-breakpoint-down(md) {
+        padding: 0 1rem;
+      }
+
+      > .row-fluid {
+        > .span9 {
+          width: 100%;
+        }
+        > .span3 {
+          display: none;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      .row-fluid > .span9 > .row-fluid {
+        display: flex;
+        flex-flow: wrap;
+
+        .links-rodape-categorias {
+          width: 50%;
+          height: auto;
+          order: 2;
+          padding: 1rem 1rem 0 0;
+        }
+
+        .links-rodape-paginas {
+          order: 3;
+          width: 50%;
+          margin: 0;
+          padding: 1rem 0 1rem 1rem;
+          border-left: 1px solid var(--B9-Rodape__Institucional__Borda);
+        }
+
+        .sobre-loja-rodape {
+          width: 100%;
+          order: 1;
+          margin: 0;
+          padding-left: 0;
+          border-bottom: 1px solid var(--B9-Rodape__Institucional__Borda);
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-flow: wrap;
+      margin-bottom: 0;
+      li {
+        list-style: none;
+        padding: 0;
+
+        a {
+          padding: 0.25rem 0.5rem;
+          margin: 0 1rem 1rem 0;
+          display: inline-flex;
+          background: var(--B9-Rodape__Institucional__Botao__Fundo);
+          border-radius: 0.25rem;
+          line-height: 1.5;
+
+          i {
+            line-height: 1.5;
+            width: 2rem;
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .links-rodape,
+      .sobre-loja-rodape {
+        border-bottom: 1px solid var(--B9-Rodape__Institucional__Borda);
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .span12 {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          margin: 0 0.5rem 1rem;
+          max-width: 90vw;
+          width: 310px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 1rem;
+          font-weight: 600;
+          line-height: 1;
+
+          i {
+            font-size: 1.25rem;
+          }
+        }
+      }
+
+      ul {
+        justify-content: center;
+        li {
+          a {
+            margin: 0 0.5rem 1rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .sobre-loja-rodape {
+      p {
+        text-align: justify;
+        line-height: 1.75;
+        font-weight: 500;
+        color: var(--B9-Rodape__Institucional__Texto);
+      }
+    }
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    position: relative;
+    margin-bottom: 0.5rem;
+    border: none;
+    color: var(--B9-Rodape__Institucional__Titulo);
+
+    &::after {
+      position: absolute;
+      background: var(--B9-Rodape__Institucional__Titulo_ElementoApoio);
+      background-size: contain;
+      content: var(--B9-Rodape__Institucional__Titulo_ElementoApoio_Content);
+      width: var(--B9-Rodape__Institucional__Titulo_ElementoApoio_Width);
+      height: var(--B9-Rodape__Institucional__Titulo_ElementoApoio_Height);
+      transform: var(--B9-Rodape__Institucional__Titulo_ElementoApoio_Transform);
+    }
+  }
+
+  .pagamento-selos {
+    background: none;
+    padding: 1rem 0;
+
+    .gateways-rodape {
+      background: none;
+      border: none;
+      margin-bottom: 1rem;
+
+      li {
+        padding: 0;
+        text-align: left;
+      }
+    }
+
+    .selos {
+      margin-left: auto;
+      float: none;
+
+      @include media-breakpoint-down(md) {
+        text-align: center;
+      }
+
+      li {
+        margin: 0 auto;
+        float: none;
+      }
+    }
+  }
+
+  > div {
+    &:last-child {
+      background: var(--B9-Rodape__UltimaLinha_Fundo) !important;
+      color: var(--B9-Rodape__UltimaLinha_Texto);
+      border: none !important;
+
+      &:before {
+        content: "";
+        background: var(--B9-Rodape__Padrao__URL) fixed
+          var(--B9-Rodape__Padrao__Fundo) !important;
+        background-size: var(--B9-Rodape__Padrao__Fundo_Tamanho) !important;
+        height: var(--B9-Rodape__Padrao__Height);
+        width: 100vw;
+        display: var(--B9-Rodape__Padrao__Display);
+      }
+
+      .conteiner {
+        padding: 0 1rem;
+
+        p {
+          padding: 1rem 0;
+        }
+
+        a {
+          background: var(--B9-Rodape__UltimaLinha_Link);
+          border-radius: 1rem 1rem 0 0;
+
+          img {
+            border-radius: 1rem 1rem 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .devname {
+    display: block;
+    margin-top: 10px;
+
+    a {
+      background: #011016 !important;
+      border-radius: 0.25rem !important;
+      padding: 0.25rem;
+      color: #fcfcfc;
+    }
+  }
+}

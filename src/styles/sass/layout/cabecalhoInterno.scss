@@ -1,0 +1,28 @@
+// Reset title
+
+.cabecalho-interno {
+  .titulo {
+    display: flex;
+    flex-flow: wrap;
+    color: var(--B9-Cor--Titulo);
+
+    &::after {
+      background: var(--B9-ElementoApoio) no-repeat center center;
+      background-size: contain;
+
+      content: "";
+      height: 1rem;
+      width: 0.75rem;
+      display: inline-flex;
+      margin-left: 0.125rem;
+    }
+
+    small {
+      display: block;
+      order: 2;
+      width: 100%;
+      color: var(--B9-Cor--Texto);
+      opacity: 0.75;
+    }
+  }
+}

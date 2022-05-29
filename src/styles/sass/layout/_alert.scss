@@ -1,0 +1,16 @@
+.alert {
+  border-radius: 1rem;
+  padding: 1rem;
+
+  .close {
+    right: 0;
+  }
+}
+
+.alert-danger,
+.alert-error {
+  background-color: var(--B9-Cor--Branco);
+  border-color: var(--B9-Cor--Primaria);
+  color: var(--B9-Cor--Primaria);
+  opacity: 0.9;
+}

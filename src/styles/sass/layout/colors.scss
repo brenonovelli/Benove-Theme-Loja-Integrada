@@ -1,0 +1,6 @@
+.fundo-secundario {
+  &#{&} {
+    background-color: var(--B9-Cor--Fundo);
+    color: var(--B9-Cor--Texto);
+  }
+}

@@ -1,0 +1,35 @@
+// Extends
+
+@mixin iconTitle {
+  &::after {
+    background: var(--B9-ElementoApoio) no-repeat center center;
+    background-size: contain;
+
+    content: "";
+    height: 2rem;
+    width: 1.25rem;
+    display: inline-flex;
+    margin-left: 0.25rem;
+  }
+}
+
+@mixin iconTitleSmall {
+  &::after {
+    background: var(--B9-ElementoApoio) no-repeat center center;
+    background-size: contain;
+
+    content: "";
+    height: 1rem;
+    width: 0.75rem;
+    display: inline-flex;
+    margin-left: 0.125rem;
+  }
+}
+
+@mixin removeScrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
