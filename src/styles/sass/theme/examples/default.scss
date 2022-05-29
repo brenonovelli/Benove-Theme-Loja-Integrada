@@ -128,7 +128,7 @@
   /**
    ** Menu mobile */
   --B9-MenuMobile__Fundo: var(--B9-Cor--Branco);
-  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Secundaria);
+  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Light);
   --B9-MenuMobile__Titulo: var(--B9-Cor--Primaria);
   --B9-MenuMobile__Texto: var(--B9-Cor--Texto);
   --B9-MenuMobile__Borda: var(--B9-Cor--Primaria);
@@ -169,6 +169,7 @@
   --B9-Listagem--Titulo_ElementoApoio_Width: 1.25rem;
   --B9-Listagem--Titulo_ElementoApoio_Height: 1.25rem;
   --B9-Listagem--Produto__Titulo__Fonte: 0.75rem;
+  --B9-Listagem--Produto__Titulo__Fonte_Cor: var(--B9-Cor--Texto);
   --B9-Listagem--Produto__Titulo__Peso: 500;
   --B9-Listagem--BG: var(--B9-Cor--Fundo);
   --B9-Listagem--BoxShadow: 0 40px 30px -10px rgba(0, 0, 0, 0.05);

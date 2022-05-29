@@ -128,7 +128,7 @@ body[data-b9-theme="nike"] {
   /**
    ** Menu mobile */
   --B9-MenuMobile__Fundo: var(--B9-Cor--Branco);
-  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Secundaria);
+  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Light);
   --B9-MenuMobile__Titulo: var(--B9-Cor--Primaria);
   --B9-MenuMobile__Texto: var(--B9-Cor--Texto);
   --B9-MenuMobile__Borda: var(--B9-Cor--Primaria);
@@ -169,6 +169,7 @@ body[data-b9-theme="nike"] {
   --B9-Listagem--Titulo_ElementoApoio_Width: 2rem;
   --B9-Listagem--Titulo_ElementoApoio_Height: 2rem;
   --B9-Listagem--Produto__Titulo__Fonte: 0.75rem;
+  --B9-Listagem--Produto__Titulo__Fonte_Cor: var(--B9-Cor--Primaria);
   --B9-Listagem--Produto__Titulo__Peso: 500;
   --B9-Listagem--BG: var(--B9-Cor--Fundo);
   --B9-Listagem--BoxShadow: 0;
@@ -180,10 +181,10 @@ body[data-b9-theme="nike"] {
   --B9-Listagem--Destaques__Texto: var(--B9-Cor--Texto);
   --B9-Listagem--Destaques__Hover__Fundo: var(--B9-Cor--Primaria);
   --B9-Listagem--Destaques__Hover__Texto: var(--B9-Cor--Branco);
-  --B9-Listagem--PrecoProduto__Fundo: var(--B9-Cor--Secundaria);
-  --B9-Listagem--PrecoProduto__Texto: var(--B9-Cor--Branco);
-  --B9-Listagem--PrecoProduto__Hover__Fundo: var(--B9-Cor--Secundaria);
-  --B9-Listagem--PrecoProduto__Hover__Texto: var(--B9-Cor--Branco);
+  --B9-Listagem--PrecoProduto__Fundo: var(--B9-Cor--Branco);
+  --B9-Listagem--PrecoProduto__Texto: var(--B9-Cor--Primaria);
+  --B9-Listagem--PrecoProduto__Hover__Fundo: var(--B9-Cor--Terciaria);
+  --B9-Listagem--PrecoProduto__Hover__Texto: var(--B9-Cor--Primaria);
   --B9-Listagem--Tag__Fundo-Padrao: var(--B9-Cor--Secundaria);
   --B9-Listagem--Tag__Fundo-Promocao: var(--B9-Cor--Primaria);
   --B9-Listagem--Tag__Fundo-Adicionado: var(--B9-Cor--Secundaria);

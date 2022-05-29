@@ -118,7 +118,7 @@
   /**
    ** Menu mobile */
   --B9-MenuMobile__Fundo: var(--B9-Cor--Branco);
-  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Secundaria);
+  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Light);
   --B9-MenuMobile__Titulo: var(--B9-Cor--Primaria);
   --B9-MenuMobile__Texto: var(--B9-Cor--Texto);
   --B9-MenuMobile__Borda: var(--B9-Cor--Primaria);
@@ -154,6 +154,7 @@
   --B9-Listagem--Titulo_ElementoApoio_Width: 1.25rem;
   --B9-Listagem--Titulo_ElementoApoio_Height: 1.25rem;
   --B9-Listagem--Produto__Titulo__Fonte: 0.75rem;
+  --B9-Listagem--Produto__Titulo__Fonte_Cor: var(--B9-Cor--Texto);
   --B9-Listagem--Produto__Titulo__Peso: 500;
   --B9-Listagem--BG: var(--B9-Cor--Fundo);
   --B9-Listagem--BoxShadow: 0 40px 30px -10px rgba(0, 0, 0, 0.05);
@@ -395,6 +396,7 @@ body[data-b9-theme=zuloja] {
   --B9-Listagem--Titulo_ElementoApoio_Width: 1.25rem;
   --B9-Listagem--Titulo_ElementoApoio_Height: 1.25rem;
   --B9-Listagem--Produto__Titulo__Fonte: 0.75rem;
+  --B9-Listagem--Produto__Titulo__Fonte_Cor: var(--B9-Cor--Texto);
   --B9-Listagem--Produto__Titulo__Peso: 500;
   --B9-Listagem--BG: var(--B9-Cor--Fundo);
   --B9-Listagem--BoxShadow: 0 40px 30px -10px rgba(0, 0, 0, 0.05);
@@ -597,7 +599,7 @@ body[data-b9-theme=nike] {
   /**
    ** Menu mobile */
   --B9-MenuMobile__Fundo: var(--B9-Cor--Branco);
-  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Secundaria);
+  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Light);
   --B9-MenuMobile__Titulo: var(--B9-Cor--Primaria);
   --B9-MenuMobile__Texto: var(--B9-Cor--Texto);
   --B9-MenuMobile__Borda: var(--B9-Cor--Primaria);
@@ -633,6 +635,7 @@ body[data-b9-theme=nike] {
   --B9-Listagem--Titulo_ElementoApoio_Width: 2rem;
   --B9-Listagem--Titulo_ElementoApoio_Height: 2rem;
   --B9-Listagem--Produto__Titulo__Fonte: 0.75rem;
+  --B9-Listagem--Produto__Titulo__Fonte_Cor: var(--B9-Cor--Primaria);
   --B9-Listagem--Produto__Titulo__Peso: 500;
   --B9-Listagem--BG: var(--B9-Cor--Fundo);
   --B9-Listagem--BoxShadow: 0;
@@ -644,10 +647,10 @@ body[data-b9-theme=nike] {
   --B9-Listagem--Destaques__Texto: var(--B9-Cor--Texto);
   --B9-Listagem--Destaques__Hover__Fundo: var(--B9-Cor--Primaria);
   --B9-Listagem--Destaques__Hover__Texto: var(--B9-Cor--Branco);
-  --B9-Listagem--PrecoProduto__Fundo: var(--B9-Cor--Secundaria);
-  --B9-Listagem--PrecoProduto__Texto: var(--B9-Cor--Branco);
-  --B9-Listagem--PrecoProduto__Hover__Fundo: var(--B9-Cor--Secundaria);
-  --B9-Listagem--PrecoProduto__Hover__Texto: var(--B9-Cor--Branco);
+  --B9-Listagem--PrecoProduto__Fundo: var(--B9-Cor--Branco);
+  --B9-Listagem--PrecoProduto__Texto: var(--B9-Cor--Primaria);
+  --B9-Listagem--PrecoProduto__Hover__Fundo: var(--B9-Cor--Terciaria);
+  --B9-Listagem--PrecoProduto__Hover__Texto: var(--B9-Cor--Primaria);
   --B9-Listagem--Tag__Fundo-Padrao: var(--B9-Cor--Secundaria);
   --B9-Listagem--Tag__Fundo-Promocao: var(--B9-Cor--Primaria);
   --B9-Listagem--Tag__Fundo-Adicionado: var(--B9-Cor--Secundaria);
@@ -835,7 +838,7 @@ body[data-b9-theme=adidas] {
   /**
    ** Menu mobile */
   --B9-MenuMobile__Fundo: var(--B9-Cor--Branco);
-  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Secundaria);
+  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Light);
   --B9-MenuMobile__Titulo: var(--B9-Cor--Primaria);
   --B9-MenuMobile__Texto: var(--B9-Cor--Texto);
   --B9-MenuMobile__Borda: var(--B9-Cor--Primaria);
@@ -871,6 +874,7 @@ body[data-b9-theme=adidas] {
   --B9-Listagem--Titulo_ElementoApoio_Width: 2rem;
   --B9-Listagem--Titulo_ElementoApoio_Height: 2rem;
   --B9-Listagem--Produto__Titulo__Fonte: 0.75rem;
+  --B9-Listagem--Produto__Titulo__Fonte_Cor: var(--B9-Cor--Primaria);
   --B9-Listagem--Produto__Titulo__Peso: 500;
   --B9-Listagem--BG: var(--B9-Cor--Fundo);
   --B9-Listagem--BoxShadow: 0;
@@ -1073,7 +1077,7 @@ body[data-b9-theme=artSkate] {
   /**
    ** Menu mobile */
   --B9-MenuMobile__Fundo: var(--B9-Cor--Branco);
-  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Secundaria);
+  --B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Light);
   --B9-MenuMobile__Titulo: var(--B9-Cor--Secundaria);
   --B9-MenuMobile__Texto: var(--B9-Cor--Texto);
   --B9-MenuMobile__Borda: var(--B9-Cor--Primaria);
@@ -1109,6 +1113,7 @@ body[data-b9-theme=artSkate] {
   --B9-Listagem--Titulo_ElementoApoio_Width: 2rem;
   --B9-Listagem--Titulo_ElementoApoio_Height: 2rem;
   --B9-Listagem--Produto__Titulo__Fonte: 1rem;
+  --B9-Listagem--Produto__Titulo__Fonte_Cor: var(--B9-Cor--Texto);
   --B9-Listagem--Produto__Titulo__Peso: 500;
   --B9-Listagem--BG: var(--B9-Cor--Fundo);
   --B9-Listagem--BoxShadow: 0 0 30px -10px rgb(0, 0, 0, 0.2);
@@ -1347,6 +1352,7 @@ body[data-b9-theme=maniaDeCoral] {
   --B9-Listagem--Titulo_ElementoApoio_Width: 2rem;
   --B9-Listagem--Titulo_ElementoApoio_Height: 2rem;
   --B9-Listagem--Produto__Titulo__Fonte: 0.75rem;
+  --B9-Listagem--Produto__Titulo__Fonte_Cor: var(--B9-Cor--Texto);
   --B9-Listagem--Produto__Titulo__Peso: 500;
   --B9-Listagem--BG: var(--B9-Cor--Fundo);
   --B9-Listagem--BoxShadow: 0 40px 30px -10px rgba(0, 0, 0, 0.05);
@@ -3401,6 +3407,7 @@ body.pagina-produto .listagem > ul:not(.produtos-carrossel) {
   display: var(--B9-Listagem--Produtos__Display);
   justify-content: space-between;
   min-height: 4rem;
+  height: 100%;
   align-items: center;
   padding: 0.5rem 1rem;
 }
@@ -3408,7 +3415,7 @@ body.pagina-produto .listagem > ul:not(.produtos-carrossel) {
   .listagem > ul:not(.produtos-carrossel) > li.listagem-linha > ul > li .listagem-item .info-produto {
     flex-direction: column;
     margin: 0 0 4px;
-    padding: 0;
+    padding: 0.25rem 0.5rem;
     text-align: center;
   }
 }
@@ -3578,13 +3585,13 @@ body.pagina-produto .listagem > ul:not(.produtos-carrossel) {
 .listagem .listagem-linha li .listagem-item .info-produto a {
   min-height: min-content !important;
   font-weight: var(--B9-Listagem--Produto__Titulo__Peso);
+  font-size: var(--B9-Listagem--Produto__Titulo__Fonte);
+  color: var(--B9-Listagem--Produto__Titulo__Fonte_Cor);
   line-height: 1.125;
-  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 0.75rem;
-  color: var(--B9-Cor--Texto);
 }
 @media (max-width: 991.98px) {
   .listagem .listagem-linha li .listagem-item .info-produto a {
