@@ -4,12 +4,16 @@
 @import "extras/extends";
 @import "extras/breakpoints";
 
-// Thene
-// @import "theme/";
-@import "theme/examples";
+// Vars
+@import "variables/"; // Load all variables
+// @import "variables/art-skate.scss";
 
 // Imports
+@import "tools"; // Tools for show multiples themes
 
+// Thene
+@import "theme"; // Base theme
+@import "theme/examples"; //Examples themes
+
+// All code
 @import "layout/layout";
-
-@import "tools/index";

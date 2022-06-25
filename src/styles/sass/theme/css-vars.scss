@@ -1,0 +1,262 @@
+@mixin css-vars {
+  /* Cores da marca */
+  --B9-Cor--Primaria: #{$--B9-Cor--Primaria};
+  --B9-Cor--Secundaria: #{$--B9-Cor--Secundaria};
+  --B9-Cor--Terciaria: #{$--B9-Cor--Terciaria};
+  /* Cor que gere contraste sob a cor primaria */
+  --B9-Cor--Primaria-Texto: #{$--B9-Cor--Primaria-Texto};
+
+  /* Cores padrão */
+  --B9-Cor--Preto: #{$--B9-Cor--Preto};
+  --B9-Cor--Escuro: #{$--B9-Cor--Escuro};
+  --B9-Cor--Cinza: #{$--B9-Cor--Cinza};
+  --B9-Cor--Light: #{$--B9-Cor--Light};
+  --B9-Cor--OffWhite: #{$--B9-Cor--OffWhite};
+  --B9-Cor--Branco: #{$--B9-Cor--Branco};
+  --B9-Cor--Sucesso: #{$--B9-Cor--Sucesso};
+
+  /* Cores de elementos globais */
+  --B9-Cor--Fundo: #{$--B9-Cor--Fundo};
+  --B9-Cor--Fundo-escuro: #{$--B9-Cor--Fundo-escuro};
+  --B9-Cor--Texto: #{$--B9-Cor--Texto};
+  --B9-Cor--Texto-FundoEscuro: #{$--B9-Cor--Texto-FundoEscuro};
+  --B9-Cor--Titulo: #{$--B9-Cor--Titulo};
+  --B9-Cor--Link: #{$--B9-Cor--Link};
+  --B9-Cor--Botao: #{$--B9-Cor--Botao};
+
+  /* Imagens ou fundos para elementos de apoio */
+  --B9-SimboloLogoTopoMenor: #{$--B9-SimboloLogoTopoMenor};
+  --B9-ElementoApoio: #{$--B9-ElementoApoio};
+  --B9-ElementoApoio__Cinza: #{$--B9-ElementoApoio__Cinza};
+  --B9-Pattern__01: #{$--B9-Pattern__01};
+  --B9-Pattern__02: #{$--B9-Pattern__02};
+
+  /* BG Topo */
+  --B9-Header_BG: #{$--B9-Header_BG};
+  --B9-Header_Color: #{$--B9-Header_Color};
+  --B9-Header_BG_Mobile: #{$--B9-Header_BG_Mobile};
+  --B9-Header_Color_Mobile: #{$--B9-Header_Color_Mobile};
+
+  /**
+   ** Barra Inicial - Barra no topo com ícones de redes sociais e formas de contato. */
+  --B9-BarraInicial__Fundo: #{$--B9-BarraInicial__Fundo};
+  --B9-BarraInicial__Margin: #{$--B9-BarraInicial__Margin};
+  --B9-BarraInicial__BorderBottom: #{$--B9-BarraInicial__BorderBottom};
+  --B9-BarraInicial__Texto: #{$--B9-BarraInicial__Texto};
+  --B9-BarraInicial__Icones: #{$--B9-BarraInicial__Icones};
+  --B9-BarraInicial__EspacamentoInterno: #{$--B9-BarraInicial__EspacamentoInterno};
+  --B9-BarraInicial__BorderRadius: #{$--B9-BarraInicial__BorderRadius};
+
+  /**
+   ** Cabeçalho */
+  --B9-Cabecalho__Altura: #{$--B9-Cabecalho__Altura};
+  --B9-Cabecalho__Altura_PaginasInternas: #{$--B9-Cabecalho__Altura_PaginasInternas};
+  --B9-Cabecalho__Logo_Altura: #{$--B9-Cabecalho__Logo_Altura};
+  --B9-Cabecalho__Fundo: #{$--B9-Cabecalho__Fundo};
+  --B9-Cabecalho__Fundo_Mobile: #{$--B9-Cabecalho__Fundo_Mobile};
+  --B9-Cabecalho__Fundo_Size: #{$--B9-Cabecalho__Fundo_Size};
+  --B9-Cabecalho__Fundo_Size_Mobile: #{$--B9-Cabecalho__Fundo_Size_Mobile};
+  --B9-Cabecalho__Texto: #{$--B9-Cabecalho__Texto};
+  --B9-Cabecalho__Bemvindo__Texto: #{$--B9-Cabecalho__Bemvindo__Texto};
+  --B9-Cabecalho__Bemvindo__Link: #{$--B9-Cabecalho__Bemvindo__Link};
+  --B9-Cabecalho__AcoesConta__Background: #{$--B9-Cabecalho__AcoesConta__Background};
+  --B9-Cabecalho__AcoesConta__Texto-Cor: #{$--B9-Cabecalho__AcoesConta__Texto-Cor};
+  --B9-Cabecalho__AcoesConta__Texto-Tamanho: #{$--B9-Cabecalho__AcoesConta__Texto-Tamanho};
+  --B9-Cabecalho__AcoesConta__Icone-Cor: #{$--B9-Cabecalho__AcoesConta__Icone-Cor};
+  --B9-Cabecalho__AcoesConta__Icone-Tamanho: #{$--B9-Cabecalho__AcoesConta__Icone-Tamanho};
+  --B9-Cabecalho__AcoesConta__Shadow: #{$--B9-Cabecalho__AcoesConta__Shadow};
+  --B9-Cabecalho__AcoesConta__Padding: #{$--B9-Cabecalho__AcoesConta__Padding};
+  --B9-Cabecalho__AcoesConta__BorderRadius: #{$--B9-Cabecalho__AcoesConta__BorderRadius};
+  --B9-Cabecalho__Carrinho__Shadow: #{$--B9-Cabecalho__Carrinho__Shadow};
+  --B9-Cabecalho__Carrinho__Icone_Texto: #{$--B9-Cabecalho__Carrinho__Icone_Texto};
+  --B9-Cabecalho__Carrinho__Icone_Fundo: #{$--B9-Cabecalho__Carrinho__Icone_Fundo};
+  --B9-Cabecalho__Carrinho__Quantidade_Texto: #{$--B9-Cabecalho__Carrinho__Quantidade_Texto};
+  --B9-Cabecalho__Carrinho__Quantidade_Fundo: #{$--B9-Cabecalho__Carrinho__Quantidade_Fundo};
+  --B9-Cabecalho__Carrinho__BotaoInterno: #{$--B9-Cabecalho__Carrinho__BotaoInterno};
+  --B9-Cabecalho__Dropdown_Profile_BG: #{$--B9-Cabecalho__Dropdown_Profile_BG};
+  --B9-Cabecalho__Dropdown_Profile_Text: #{$--B9-Cabecalho__Dropdown_Profile_Text};
+  --B9-Cabecalho__Dropdown_Profile_BGInner: #{$--B9-Cabecalho__Dropdown_Profile_BGInner};
+  --B9-Cabecalho__Dropdown_Profile_TextInner: #{$--B9-Cabecalho__Dropdown_Profile_TextInner};
+  --B9-Cabecalho__Dropdown_Profile_BorderSize: #{$--B9-Cabecalho__Dropdown_Profile_BorderSize};
+  --B9-Cabecalho__Dropdown_Profile_Border: #{$--B9-Cabecalho__Dropdown_Profile_Border};
+  --B9-Cabecalho__Dropdown_Profile_BorderRadius: #{$--B9-Cabecalho__Dropdown_Profile_BorderRadius};
+
+  /**
+   ** Cabeçalho - Busca */
+  --B9-Busca__Fundo: #{$--B9-Busca__Fundo};
+  --B9-Busca__Fundo_Focus: #{$--B9-Busca__Fundo_Focus};
+  --B9-Busca__Borda: #{$--B9-Busca__Borda};
+  --B9-Busca__Borda_Focus: #{$--B9-Busca__Borda_Focus};
+  --B9-Busca__Texto: #{$--B9-Busca__Texto};
+  --B9-Busca__Botao_Texto: #{$--B9-Busca__Botao_Texto};
+  --B9-Busca__Botao_Fundo: #{$--B9-Busca__Botao_Fundo};
+  --B9-Busca__BorderRadius_out: #{$--B9-Busca__BorderRadius_out};
+  --B9-Busca__BorderRadius: #{$--B9-Busca__BorderRadius};
+
+  /**
+   ** Barra Topo que aparece ao rolar a página */
+  --B9-BarraTopo__Fundo: #{$--B9-BarraTopo__Fundo};
+  --B9-BarraTopo__Texto: #{$--B9-BarraTopo__Texto};
+  --B9-BarraTopo__BorderRadius: #{$--B9-BarraTopo__BorderRadius};
+  --B9-BarraTopo--Espacamento: #{$--B9-BarraTopo--Espacamento};
+  --B9-BarraTopo__Logo--Altura: #{$--B9-BarraTopo__Logo--Altura};
+  --B9-BarraTopo__Logo: #{$--B9-BarraTopo__Logo};
+  --B9-BarraTopo__Busca__Texto: #{$--B9-BarraTopo__Busca__Texto};
+  --B9-BarraTopo__Busca__Fundo: #{$--B9-BarraTopo__Busca__Fundo};
+  --B9-BarraTopo__BotaoBusca__Fundo: #{$--B9-BarraTopo__BotaoBusca__Fundo};
+  --B9-BarraTopo__BotaoBusca__Texto: #{$--B9-BarraTopo__BotaoBusca__Texto};
+
+  /**
+   ** Barra menu principal */
+  --B9-MenuPrincipal__Display: #{$--B9-MenuPrincipal__Display};
+  --B9-MenuPrincipal__Fundo: #{$--B9-MenuPrincipal__Fundo};
+  --B9-MenuPrincipal__Fundo_Hover: #{$--B9-MenuPrincipal__Fundo_Hover};
+  --B9-MenuPrincipal__Texto: #{$--B9-MenuPrincipal__Texto};
+  --B9-MenuPrincipal__Seta: #{$--B9-MenuPrincipal__Seta};
+  --B9-MenuPrincipal__TextoHover: #{$--B9-MenuPrincipal__TextoHover};
+  /* Submenu 1 */
+  --B9-MenuPrincipal__Submenu__Fundo: #{$--B9-MenuPrincipal__Submenu__Fundo};
+  --B9-MenuPrincipal__Submenu__Borda: #{$--B9-MenuPrincipal__Submenu__Borda};
+  --B9-MenuPrincipal__Submenu__Texto: #{$--B9-MenuPrincipal__Submenu__Texto};
+  --B9-MenuPrincipal__Submenu__TextoHover: #{$--B9-MenuPrincipal__Submenu__TextoHover};
+  /* Submenu 2 */
+  --B9-MenuPrincipal__Submenu3__Fundo: #{$--B9-MenuPrincipal__Submenu3__Fundo};
+  --B9-MenuPrincipal__Submenu3__Borda: #{$--B9-MenuPrincipal__Submenu3__Borda};
+  --B9-MenuPrincipal__Submenu3__Texto: #{$--B9-MenuPrincipal__Submenu3__Texto};
+  --B9-MenuPrincipal__Submenu3__TextoHover: #{$--B9-MenuPrincipal__Submenu3__TextoHover};
+
+  /**
+   ** Barra mobile */
+  --B9-BarraMobile__Fundo: #{$--B9-BarraMobile__Fundo};
+  --B9-BarraMobile__Texto: #{$--B9-BarraMobile__Texto};
+  --B9-BarraMobile__Padding: #{$--B9-BarraMobile__Padding};
+  --B9-BarraMobile__Margin: #{$--B9-BarraMobile__Margin};
+  --B9-BarraMobile__BorderBottom: #{$--B9-BarraMobile__BorderBottom};
+  --B9-BarraMobile__BorderRadius: #{$--B9-BarraMobile__BorderRadius};
+
+  /**
+   ** Menu mobile */
+  --B9-MenuMobile__Fundo: #{$--B9-MenuMobile__Fundo};
+  --B9-MenuMobile__Fundo_Nivel2: #{$--B9-MenuMobile__Fundo_Nivel2};
+  --B9-MenuMobile__Titulo: #{$--B9-MenuMobile__Titulo};
+  --B9-MenuMobile__Texto: #{$--B9-MenuMobile__Texto};
+  --B9-MenuMobile__Borda: #{$--B9-MenuMobile__Borda};
+  --B9-MenuMobile__Botao_Fundo: #{$--B9-MenuMobile__Botao_Fundo};
+  --B9-MenuMobile__Botao_Texto: #{$--B9-MenuMobile__Botao_Texto};
+
+  /**
+   ** Full banner */
+  --B9-FullBanner_Altura-desktop: #{$--B9-FullBanner_Altura-desktop};
+  --B9-FullBanner_Altura-mobile: #{$--B9-FullBanner_Altura-mobile};
+  --B9-FullBanner_Altura-mobileSmall: #{$--B9-FullBanner_Altura-mobileSmall};
+  --B9-FullBanner_BorderRadius: #{$--B9-FullBanner_BorderRadius};
+  --B9-FullBanner_Margin: #{$--B9-FullBanner_Margin};
+  --B9-FullBanner_MaxWidth: #{$--B9-FullBanner_MaxWidth};
+
+  /**
+   ** Mini banner */
+  --B9-MiniBanner_Fundo: #{$--B9-MiniBanner_Fundo};
+
+  /**
+   ** Banner tarja */
+  --B9-BannerTarja_Fundo: #{$--B9-BannerTarja_Fundo};
+
+  /**
+  ** Corpo */
+  --B9-Corpo__Fundo: #{$--B9-Corpo__Fundo};
+
+  /**
+  ** Listagem */
+  --B9-Listagem--Produtos__Display: #{$--B9-Listagem--Produtos__Display};
+  --B9-Listagem--Produtos_PorLinha: #{$--B9-Listagem--Produtos_PorLinha};
+  --B9-Listagem--Produtos_DuplaPorLinha: #{$--B9-Listagem--Produtos_DuplaPorLinha};
+  --B9-Listagem--Titulo_Cor: #{$--B9-Listagem--Titulo_Cor};
+  --B9-Listagem--Subtitulo_Cor: #{$--B9-Listagem--Subtitulo_Cor};
+  --B9-Listagem--Titulo_BorderTop: #{$--B9-Listagem--Titulo_BorderTop};
+  --B9-Listagem--Titulo_ElementoApoio: #{$--B9-Listagem--Titulo_ElementoApoio};
+  --B9-Listagem--Titulo_ElementoApoio_Content: #{$--B9-Listagem--Titulo_ElementoApoio_Content};
+  --B9-Listagem--Titulo_ElementoApoio_Width: #{$--B9-Listagem--Titulo_ElementoApoio_Width};
+  --B9-Listagem--Titulo_ElementoApoio_Height: #{$--B9-Listagem--Titulo_ElementoApoio_Height};
+  --B9-Listagem--Produto__Titulo__Fonte: #{$--B9-Listagem--Produto__Titulo__Fonte};
+  --B9-Listagem--Produto__Titulo__Fonte_Cor: #{$--B9-Listagem--Produto__Titulo__Fonte_Cor};
+  --B9-Listagem--Produto__Titulo__Peso: #{$--B9-Listagem--Produto__Titulo__Peso};
+  --B9-Listagem--Produto__BorderBottom: #{$--B9-Listagem--Produto__BorderBottom};
+  --B9-Listagem--BG: #{$--B9-Listagem--BG};
+  --B9-Listagem--BoxShadow: #{$--B9-Listagem--BoxShadow};
+  --B9-Listagem--BoxShadow_Mobile: #{$--B9-Listagem--BoxShadow_Mobile};
+  --B9-Listagem--Imagem__BorderRadius: #{$--B9-Listagem--Imagem__BorderRadius};
+  --B9-Listagem--Destaques__BorderRadius: #{$--B9-Listagem--Destaques__BorderRadius};
+  --B9-Listagem--Destaques__Padding: #{$--B9-Listagem--Destaques__Padding};
+  --B9-Listagem--Destaques__Fundo: #{$--B9-Listagem--Destaques__Fundo};
+  --B9-Listagem--Destaques__Texto: #{$--B9-Listagem--Destaques__Texto};
+  --B9-Listagem--Destaques__Hover__Fundo: #{$--B9-Listagem--Destaques__Hover__Fundo};
+  --B9-Listagem--Destaques__Hover__Texto: #{$--B9-Listagem--Destaques__Hover__Texto};
+  --B9-Listagem--PrecoProduto__Fundo: #{$--B9-Listagem--PrecoProduto__Fundo};
+  --B9-Listagem--PrecoProduto__Texto: #{$--B9-Listagem--PrecoProduto__Texto};
+  --B9-Listagem--PrecoProduto__Hover__Fundo: #{$--B9-Listagem--PrecoProduto__Hover__Fundo};
+  --B9-Listagem--PrecoProduto__Hover__Texto: #{$--B9-Listagem--PrecoProduto__Hover__Texto};
+  --B9-Listagem--Tag__Fundo-Padrao: #{$--B9-Listagem--Tag__Fundo-Padrao};
+  --B9-Listagem--Tag__Fundo-Promocao: #{$--B9-Listagem--Tag__Fundo-Promocao};
+  --B9-Listagem--Tag__Fundo-Adicionado: #{$--B9-Listagem--Tag__Fundo-Adicionado};
+  --B9-Listagem--Tag__Fundo-FreteGratis: #{$--B9-Listagem--Tag__Fundo-FreteGratis};
+  /*  Foto vertical */
+  --B9-Listagem--Imagem_ObjectFit: #{$--B9-Listagem--Imagem_ObjectFit};
+  --B9-Listagem--Imagem_Altura_Desktop: #{$--B9-Listagem--Imagem_Altura_Desktop};
+  --B9-Listagem--Imagem_Altura_Tablet: #{$--B9-Listagem--Imagem_Altura_Tablet};
+  --B9-Listagem--Imagem_Altura_Mobile: #{$--B9-Listagem--Imagem_Altura_Mobile};
+  /*  Foto quadrado responsiva */
+  --B9-Listagem--Imagem_Altura_Desktop: #{$--B9-Listagem--Imagem_Altura_Desktop};
+  --B9-Listagem--Imagem_Altura_Tablet: #{$--B9-Listagem--Imagem_Altura_Tablet};
+  --B9-Listagem--Imagem_Altura_Mobile: #{$--B9-Listagem--Imagem_Altura_Mobile};
+
+  /**
+  ** Rodapé */
+  --B9-Rodape__Fundo: #{$--B9-Rodape__Fundo};
+  --B9-Rodape__Sombra: #{$--B9-Rodape__Sombra};
+  --B9-Rodape__Padrao__Display: #{$--B9-Rodape__Padrao__Display};
+  --B9-Rodape__Padrao__URL: #{$--B9-Rodape__Padrao__URL};
+  --B9-Rodape__Padrao__Fundo: #{$--B9-Rodape__Padrao__Fundo};
+  --B9-Rodape__Padrao__Fundo_Tamanho: #{$--B9-Rodape__Padrao__Fundo_Tamanho};
+  --B9-Rodape__Padrao__Height: #{$--B9-Rodape__Padrao__Height};
+  --B9-Rodape__UltimaLinha_Fundo: #{$--B9-Rodape__UltimaLinha_Fundo};
+  --B9-Rodape__UltimaLinha_Texto: #{$--B9-Rodape__UltimaLinha_Texto};
+  --B9-Rodape__UltimaLinha_Link: #{$--B9-Rodape__UltimaLinha_Link};
+
+  /**
+  ** Institucional rodapé */
+  --B9-Rodape__Institucional__Fundo: #{$--B9-Rodape__Institucional__Fundo};
+  --B9-Rodape__Institucional__Titulo: #{$--B9-Rodape__Institucional__Titulo};
+  --B9-Rodape__Institucional__Titulo_ElementoApoio: #{$--B9-Rodape__Institucional__Titulo_ElementoApoio};
+  --B9-Rodape__Institucional__Titulo_ElementoApoio_Content: #{$--B9-Rodape__Institucional__Titulo_ElementoApoio_Content};
+  --B9-Rodape__Institucional__Titulo_ElementoApoio_Width: #{$--B9-Rodape__Institucional__Titulo_ElementoApoio_Width};
+  --B9-Rodape__Institucional__Titulo_ElementoApoio_Height: #{$--B9-Rodape__Institucional__Titulo_ElementoApoio_Height};
+  --B9-Rodape__Institucional__Titulo_ElementoApoio_Transform: #{$--B9-Rodape__Institucional__Titulo_ElementoApoio_Transform};
+  --B9-Rodape__Institucional__Borda: #{$--B9-Rodape__Institucional__Borda};
+  --B9-Rodape__Institucional__Texto: #{$--B9-Rodape__Institucional__Texto};
+  --B9-Rodape__Institucional__Botao__Texto: #{$--B9-Rodape__Institucional__Botao__Texto};
+  --B9-Rodape__Institucional__Botao__Fundo: #{$--B9-Rodape__Institucional__Botao__Fundo};
+
+  /**
+  ** Produtos */
+  --B9-Produto__Variacoes__Fundo: #{$--B9-Produto__Variacoes__Fundo};
+  --B9-Produto__Variacoes__Texto_Cor: #{$--B9-Produto__Variacoes__Texto_Cor};
+  --B9-Produto__Variacoes__Fundo_Ativo: #{$--B9-Produto__Variacoes__Fundo_Ativo};
+  --B9-Produto__Variacoes__Texto_Cor_Ativo: #{$--B9-Produto__Variacoes__Texto_Cor_Ativo};
+  --B9-Produto__Variacoes__BorderRadius: #{$--B9-Produto__Variacoes__BorderRadius};
+  --B9-Produto__Preco-Promocional: #{$--B9-Produto__Preco-Promocional};
+  --B9-Produto__Thumbs-BorderColor-Ativo: #{$--B9-Produto__Thumbs-BorderColor-Ativo};
+
+  /**
+  ** Padrão produtos */
+  --B9-Produto__Titulo__FontSize__Desktop: #{$--B9-Produto__Titulo__FontSize__Desktop};
+  --B9-Produto__Titulo__FontSize__Mobile: #{$--B9-Produto__Titulo__FontSize__Mobile};
+  --B9-Produto__Titulo__Color: #{$--B9-Produto__Titulo__Color};
+  --B9-Produto__Titulo__FontWeight: #{$--B9-Produto__Titulo__FontWeight};
+  --B9-Produto__Container_BoxShadow: #{$--B9-Produto__Container_BoxShadow};
+  --B9-Produto__Container_MaxHeight: #{$--B9-Produto__Container_MaxHeight};
+  --B9-Produto__Padrao__Fundo: #{$--B9-Produto__Padrao__Fundo};
+  --B9-Produto__Padrao__Sobreposicao_Cor: #{$--B9-Produto__Padrao__Sobreposicao_Cor};
+  --B9-Produto__Padrao__Sobreposicao_Opacidade: #{$--B9-Produto__Padrao__Sobreposicao_Opacidade};
+  --B9-Produto__Padrao__URL: #{$--B9-Produto__Padrao__URL};
+  --B9-Produto__Padrao__Fundo_Tamanho: #{$--B9-Produto__Padrao__Fundo_Tamanho};
+}

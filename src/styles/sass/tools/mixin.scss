@@ -1,0 +1,7 @@
+@mixin active-theme-indicator($theme) {
+  .b9__ChangeTheme__panel_button[data-theme="#{$theme}"] {
+    &:before {
+      background-color: #c9ff00 !important;
+    }
+  }
+}

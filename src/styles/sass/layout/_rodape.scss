@@ -81,12 +81,14 @@
           margin: 0 1rem 1rem 0;
           display: inline-flex;
           background: var(--B9-Rodape__Institucional__Botao__Fundo);
+          color: var(--B9-Rodape__Institucional__Botao__Texto);
           border-radius: 0.25rem;
           line-height: 1.5;
 
           i {
             line-height: 1.5;
             width: 2rem;
+            color: var(--B9-Rodape__Institucional__Botao__Texto);
           }
         }
       }
@@ -130,7 +132,7 @@
         li {
           a {
             margin: 0 0.5rem 1rem;
-            font-weight: 500;
+            font-weight: 600;
           }
         }
       }
@@ -203,8 +205,7 @@
 
       &:before {
         content: "";
-        background: var(--B9-Rodape__Padrao__URL) fixed
-          var(--B9-Rodape__Padrao__Fundo) !important;
+        background: var(--B9-Rodape__Padrao__URL) fixed var(--B9-Rodape__Padrao__Fundo) !important;
         background-size: var(--B9-Rodape__Padrao__Fundo_Tamanho) !important;
         height: var(--B9-Rodape__Padrao__Height);
         width: 100vw;

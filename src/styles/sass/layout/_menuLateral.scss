@@ -3,12 +3,12 @@
     padding: 2rem;
   }
 
-  &:not(:first-child) {
-    background: var(--B9-Cor--Branco);
-    border: none;
-    border-radius: 2rem;
-    box-shadow: 0 0rem 4rem -2.25rem rgba(0, 0, 0, 0.2);
-  }
+  // &:not(:first-child) {
+  background: var(--B9-Cor--Branco);
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 0rem 4rem -2.25rem rgba(0, 0, 0, 0.2);
+  // }
 
   &.menu {
     margin-bottom: 1rem;
@@ -21,6 +21,13 @@
           color: var(--B9-Cor--Branco);
         }
 
+        &.com-filho {
+          border: 0;
+          .titulo {
+            margin-right: 0;
+          }
+        }
+
         > a {
           background: var(--B9-Cor--Primaria);
           box-shadow: none;
@@ -29,7 +36,9 @@
           border-radius: 0.25rem;
 
           transition: 0.2s all ease;
-
+          > i {
+            display: none;
+          }
           strong {
             color: var(--B9-Cor--Branco);
             margin: 0;
@@ -70,6 +79,66 @@
 
               strong {
                 color: var(--B9-Cor--Branco);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .nivel-dois {
+      box-shadow: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      li {
+        display: inline-flex;
+        border-radius: 0.25rem;
+        align-items: center;
+        background: var(--B9-Cor--Cinza);
+        border: 0;
+        margin-bottom: 0.5rem;
+
+        .nivel-tres {
+          box-shadow: none;
+          padding-left: 0.5rem;
+        }
+
+        a {
+          color: var(--B9-Cor--Texto);
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+          justify-content: space-between;
+          margin: 0;
+        }
+
+        &.com-filho {
+          a {
+            i {
+              position: initial;
+              float: none;
+              margin: 0 0 0 0.5rem;
+              border-radius: 50%;
+              width: 1rem;
+              height: 1rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              transition: 0.3s ease-in-out all;
+            }
+          }
+
+          &:hover {
+            background-color: var(--B9-Cor--Primaria);
+
+            > a {
+              color: var(--B9-Cor--Primaria-Texto);
+
+              i {
+                background-color: var(--B9-Cor--Branco);
+                transform: translateX(0.5rem);
               }
             }
           }
@@ -203,9 +272,9 @@
   .botao {
     border-radius: 0 2rem 2rem 0;
     border: none;
-    background: var(--B9-Cor--Primaria);
+    background: var(--B9-Cor--Primaria) !important;
+    color: var(--B9-Cor--Primaria-Texto) !important;
     text-shadow: none;
-    color: var(--B9-Cor--Branco);
     font-weight: 700;
     padding: 0 1rem;
     height: 100%;

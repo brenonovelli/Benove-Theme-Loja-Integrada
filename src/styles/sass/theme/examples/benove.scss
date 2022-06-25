@@ -1,6 +1,6 @@
-@import "../../variables/nike";
+@import "../../variables/benove";
 
-$theme-name: "nike";
+$theme-name: "benove";
 
 body[data-b9-theme="#{$theme-name}"] {
   @include css-vars;
@@ -11,7 +11,8 @@ body[data-b9-theme="#{$theme-name}"] {
     a {
       position: relative;
       display: block;
-      background: url("https://cdn.awsli.com.br/1606/1606323/arquivos/logo-nike.svg") no-repeat center center;
+      background: url(https://raw.githubusercontent.com/brenonovelli/brenonovelli/master/assets/b.logo.gif) no-repeat
+        center center;
       background-size: contain;
       mix-blend-mode: multiply;
 

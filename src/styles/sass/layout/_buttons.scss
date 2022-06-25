@@ -10,7 +10,14 @@
 
       .ir-carrinho {
         background-color: var(--B9-Cor--Sucesso);
+        color: var(--B9-Cor--Branco);
         font-size: 1rem;
+
+        .icon-shopping-cart {
+          &::before {
+            display: none;
+          }
+        }
       }
 
       > * {
@@ -29,7 +36,7 @@
     background-image: none;
   }
 
-  &:not(.botao-busca) {
+  &:not(.botao-busca):not(.atualizar-quantidade) {
     background: var(--B9-Cor--Cinza);
     color: rgb(var(--B9-Cor--Preto));
     border: none;

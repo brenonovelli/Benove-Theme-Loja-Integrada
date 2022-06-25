@@ -1,6 +1,6 @@
-@import "../../variables/nike";
+@import "../../variables/art-skate";
 
-$theme-name: "nike";
+$theme-name: "artSkate";
 
 body[data-b9-theme="#{$theme-name}"] {
   @include css-vars;
@@ -11,9 +11,9 @@ body[data-b9-theme="#{$theme-name}"] {
     a {
       position: relative;
       display: block;
-      background: url("https://cdn.awsli.com.br/1606/1606323/arquivos/logo-nike.svg") no-repeat center center;
+      background: url("https://cdn.awsli.com.br/2427/2427948/arquivos/logo_art_skate.png") no-repeat center center;
       background-size: contain;
-      mix-blend-mode: multiply;
+      mix-blend-mode: unset;
 
       img {
         opacity: 0;

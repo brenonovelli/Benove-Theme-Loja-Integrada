@@ -49,13 +49,14 @@
     &:not(.produtos-carrossel) {
       --grid: var(--B9-Listagem--Produtos_DuplaPorLinha);
       --innerGrid: var(--B9-Listagem--Produtos_PorLinha);
-      --gapGrid: 3rem;
+      --gapGrid: 1rem;
 
       @include media-breakpoint-down(md) {
         --grid: 1;
         --innerGrid: 2;
         --gapGrid: 1rem;
       }
+
       body.pagina-produto & {
         --grid: 1;
         --innerGrid: 4;
@@ -97,15 +98,15 @@
               border-radius: var(--B9-Listagem--Imagem__BorderRadius);
               background: var(--B9-Listagem--BG);
               box-shadow: var(--B9-Listagem--BoxShadow_Mobile);
-              
+
               @include media-breakpoint-up(md) {
                 box-shadow: var(--B9-Listagem--BoxShadow);
-                
               }
               .listagem-item {
-                @include media-breakpoint-up(md) {
-                  height: 100%;
-                }
+                // Parar de quebrar responsividade grid
+                // @include media-breakpoint-up(md) {
+                //   height: 100%;
+                // }
 
                 .acoes-produto {
                   bottom: 0;
@@ -122,12 +123,31 @@
                   @include media-breakpoint-down(md) {
                     flex-direction: column;
                     margin: 0 0 4px;
-                    padding: .25rem .5rem;
-                    text-align: center;
+                    padding: 0.25rem 0.5rem;
+                    width: 100%;
                   }
 
                   .nome-produto {
                     padding-right: 0.5rem;
+                    padding: 0.25rem;
+                    margin-bottom: 0.25rem;
+                    min-height: min-content !important;
+                    border-bottom: var(--B9-Listagem--Produto__BorderBottom);
+                    font-weight: var(--B9-Listagem--Produto__Titulo__Peso);
+                    font-size: var(--B9-Listagem--Produto__Titulo__Fonte);
+                    color: var(--B9-Listagem--Produto__Titulo__Fonte_Cor);
+                    line-height: 1.125;
+                    width: 100%;
+
+                    @include media-breakpoint-down(md) {
+                      margin-bottom: 0;
+                      font-weight: 500;
+                      padding: 0.5rem 0.25rem;
+                    }
+
+                    @include media-breakpoint-up(md) {
+                      font-size: var(--B9-Listagem--Produto__Titulo__Fonte);
+                    }
                   }
 
                   .preco-produto {
@@ -135,9 +155,8 @@
 
                     .desconto-a-vista {
                       font-size: 10px;
-                      white-space: break-spaces;
-                      line-height: 7px;
                       max-width: 100%;
+                      line-height: 1;
 
                       strong {
                         font-size: 14px;
@@ -145,15 +164,6 @@
                     }
 
                     .preco-a-partir {
-                      padding: 0 0.25rem;
-
-                      @include media-breakpoint-up(md) {
-                        padding: 0 0.5rem;
-                        display: flex;
-                        flex-direction: column;
-                        white-space: nowrap;
-                        line-height: 1.25;
-                      }
                     }
                   }
                 }
@@ -245,7 +255,7 @@
       max-width: 50vw;
       margin: 0;
 
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         max-width: 25vw;
       }
 
@@ -258,7 +268,6 @@
         @include media-breakpoint-down(md) {
           flex-direction: column;
           border-radius: var(--B9-Listagem--Imagem__BorderRadius);
-          text-align: center;
         }
 
         .imagem-produto {
@@ -283,8 +292,7 @@
             height: 100%;
             object-fit: var(--B9-Listagem--Imagem_ObjectFit);
             padding: 0 1px;
-            border-radius: var(--B9-Listagem--Imagem__BorderRadius)
-              var(--B9-Listagem--Imagem__BorderRadius) 0 0;
+            border-radius: var(--B9-Listagem--Imagem__BorderRadius) var(--B9-Listagem--Imagem__BorderRadius) 0 0;
           }
 
           @include media-breakpoint-up(lg) {
@@ -306,8 +314,6 @@
           > div:last-child {
             display: flex;
             flex-direction: column;
-            width: calc(100% - 8px);
-            border-radius: 4px;
           }
 
           @include media-breakpoint-down(md) {
@@ -317,47 +323,23 @@
             flex-direction: column-reverse;
           }
 
-          a {
-            min-height: min-content !important;
-            font-weight: var(--B9-Listagem--Produto__Titulo__Peso);
-            font-size: var(--B9-Listagem--Produto__Titulo__Fonte);
-            color: var(--B9-Listagem--Produto__Titulo__Fonte_Cor);
-            line-height: 1.125;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 0.75rem;
-
-            @include media-breakpoint-down(md) {
-              margin-bottom: 0;
-              font-weight: 500;
-              padding: 0.5rem 0.25rem;
-            }
-
-            @include media-breakpoint-up(md) {
-              font-size: var(--B9-Listagem--Produto__Titulo__Fonte);
-            }
-          }
-
           .preco-produto {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.25rem;
+            min-height: 2rem;
+            padding: 0.25rem 0.5rem;
+
+            background-color: var(--B9-Listagem--PrecoProduto__Fundo);
+            border-radius: 0.25rem;
+
+            text-align: left;
+
             &,
             * {
               transition: 0.3s all ease-in-out;
               color: var(--B9-Listagem--PrecoProduto__Texto);
             }
-
-            background-color: var(--B9-Listagem--PrecoProduto__Fundo);
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            text-align: center;
-            min-height: 2rem;
-            display: flex;
-            justify-content: center;
-            white-space: nowrap;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 0.25rem;
-            align-items: center;
 
             &.destaque-parcela {
               flex-direction: column;
@@ -366,8 +348,7 @@
             > div {
               display: flex;
               align-items: center;
-              justify-content: center;
-              line-height: 1;
+              line-height: 1.125;
               margin: 0;
 
               .preco-a-partir {

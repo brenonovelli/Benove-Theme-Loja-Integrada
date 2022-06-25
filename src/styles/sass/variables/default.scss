@@ -1,0 +1,247 @@
+// Cores da marca
+$--B9-Cor--Primaria: #011016 !default;
+$--B9-Cor--Secundaria: #123456 !default;
+$--B9-Cor--Terciaria: #5b6164 !default;
+// Cor que gere contraste sob a cor primaria
+$--B9-Cor--Primaria-Texto: #ffffff !default;
+
+// Cores padrão
+$--B9-Cor--Preto: 1, 16, 22 !default;
+$--B9-Cor--Escuro: #261019 !default;
+$--B9-Cor--Cinza: #dddddd !default;
+$--B9-Cor--Light: #eeeeee !default;
+$--B9-Cor--OffWhite: #fcfcfc !default;
+$--B9-Cor--Branco: #fff !default;
+$--B9-Cor--Sucesso: #4b8d18 !default;
+
+// Cores de elementos globais
+$--B9-Cor--Fundo: var(--B9-Cor--Branco) !default;
+$--B9-Cor--Fundo-escuro: var(--B9-Cor--Terciaria) !default;
+$--B9-Cor--Texto: #5b6164 !default;
+$--B9-Cor--Texto-FundoEscuro: #999 !default;
+$--B9-Cor--Titulo: var(--B9-Cor--Primaria) !default;
+$--B9-Cor--Link: var(--B9-Cor--Primaria) !default;
+$--B9-Cor--Botao: var(--B9-Cor--Sucesso) !default;
+
+// Imagens ou fundos para elementos de apoio
+$--B9-SimboloLogoTopoMenor: url("https://cdn.awsli.com.br/1606/1606323/arquivos/logo_benove_isolated copy.png") !default;
+$--B9-ElementoApoio: url("https://cdn.awsli.com.br/1606/1606323/arquivos/logo_benove_dark.png") !default;
+$--B9-ElementoApoio__Cinza: url("https://cdn.awsli.com.br/1606/1606323/arquivos/logo_color.png") !default;
+$--B9-Pattern__01: none !default;
+$--B9-Pattern__02: none !default;
+
+// BG Topo
+$--B9-Header_BG: white !default;
+$--B9-Header_Color: var(--B9-Cor--OffWhite) !default;
+$--B9-Header_BG_Mobile: var(--B9-Header_BG) !default;
+$--B9-Header_Color_Mobile: var(--B9-Header_Color) !default;
+
+// Barra Inicial - Barra no topo com ícones de redes sociais e formas de contato.
+$--B9-BarraInicial__Fundo: var(--B9-Header_Color) var(--B9-Header_BG) !default;
+$--B9-BarraInicial__Margin: 0 !default;
+$--B9-BarraInicial__BorderBottom: none !default;
+$--B9-BarraInicial__Texto: var(--B9-Cor--Texto) !default;
+$--B9-BarraInicial__Icones: var(--B9-Cor--Primaria) !default;
+$--B9-BarraInicial__EspacamentoInterno: 24px 8px !default;
+$--B9-BarraInicial__BorderRadius: 0 !default;
+
+/**
+** Cabeçalho */
+$--B9-Cabecalho__Altura: auto !default;
+$--B9-Cabecalho__Altura_PaginasInternas: auto !default;
+$--B9-Cabecalho__Logo_Altura: 160px !default;
+$--B9-Cabecalho__Fundo: var(--B9-Header_Color) var(--B9-Header_BG) !default;
+$--B9-Cabecalho__Fundo_Mobile: var(--B9-Header_Color_Mobile) var(--B9-Header_BG_Mobile) !default;
+$--B9-Cabecalho__Fundo_Size: cover !default;
+$--B9-Cabecalho__Fundo_Size_Mobile: cover !default;
+$--B9-Cabecalho__Texto: var(--B9-Cor--Texto) !default;
+$--B9-Cabecalho__Bemvindo__Texto: var(--B9-Cor--Texto) !default;
+$--B9-Cabecalho__Bemvindo__Link: var(--B9-Cor--Texto) !default;
+$--B9-Cabecalho__AcoesConta__Background: var(--B9-Cor--Branco) !default;
+$--B9-Cabecalho__AcoesConta__Texto-Cor: var($--B9-Cabecalho__Texto) !default;
+$--B9-Cabecalho__AcoesConta__Texto-Tamanho: 13px !default;
+$--B9-Cabecalho__AcoesConta__Icone-Cor: var(--B9-Cor--Primaria) !default;
+$--B9-Cabecalho__AcoesConta__Icone-Tamanho: 12px !default;
+$--B9-Cabecalho__AcoesConta__Shadow: none !default;
+// $--B9-Cabecalho__AcoesConta__Shadow: 1px 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.25) !default;
+$--B9-Cabecalho__AcoesConta__Padding: 0.25rem 0.5rem !default;
+$--B9-Cabecalho__AcoesConta__BorderRadius: 0.5rem !default;
+$--B9-Cabecalho__Carrinho__Shadow: none !default;
+// $--B9-Cabecalho__Carrinho__Shadow: 1px 0.5rem 1rem -0.5rem rgba(0, 0, 0, 0.25) !default;
+$--B9-Cabecalho__Carrinho__Icone_Texto: var(--B9-Cor--Texto) !default;
+$--B9-Cabecalho__Carrinho__Icone_Fundo: var(--B9-Cor--Cinza) !default;
+$--B9-Cabecalho__Carrinho__Quantidade_Texto: var(--B9-Cor--Texto) !default;
+$--B9-Cabecalho__Carrinho__Quantidade_Fundo: rgba(255, 255, 255, 0.1) !default;
+$--B9-Cabecalho__Carrinho__BotaoInterno: var(--B9-Cor--Sucesso) !default;
+$--B9-Cabecalho__Dropdown_Profile_BG: var(--B9-Cor--Primaria) !default;
+$--B9-Cabecalho__Dropdown_Profile_Text: var(--B9-Cor--Primaria-Texto) !default;
+$--B9-Cabecalho__Dropdown_Profile_BGInner: rgb(var(--B9-Cor--Preto)) !default;
+$--B9-Cabecalho__Dropdown_Profile_TextInner: var(--B9-Cor--Branco) !default;
+$--B9-Cabecalho__Dropdown_Profile_BorderSize: 4px !default;
+$--B9-Cabecalho__Dropdown_Profile_Border: solid var(--B9-Cor--Primaria) !default;
+$--B9-Cabecalho__Dropdown_Profile_BorderRadius: 1rem !default;
+
+// Cabeçalho - Busca
+$--B9-Busca__Fundo: rgba(255, 255, 255, 0.1) !default;
+$--B9-Busca__Fundo_Focus: rgba(255, 255, 255, 0.25) !default;
+$--B9-Busca__Borda: rgba(160, 160, 160, 0.5) !default;
+$--B9-Busca__Borda_Focus: rgba(160, 160, 160, 0.75) !default;
+$--B9-Busca__Texto: var(--B9-Cor--Texto) !default;
+$--B9-Busca__Botao_Texto: var(--B9-Cor--Texto) !default;
+$--B9-Busca__Botao_Fundo: rgba(255, 255, 255, 0.25) !default;
+$--B9-Busca__BorderRadius_out: 20px !default;
+$--B9-Busca__BorderRadius: 19px !default;
+
+// Barra Topo que aparece ao rolar a página
+$--B9-BarraTopo__Fundo: rgba(var(--B9-Cor--Preto), 0.95) !default;
+$--B9-BarraTopo__Texto: var(--B9-Cor--OffWhite) !default;
+$--B9-BarraTopo__BorderRadius: 0 0 1.25rem 1.25rem !default;
+$--B9-BarraTopo--Espacamento: 8px 16px !default;
+$--B9-BarraTopo__Logo--Altura: 40px !default;
+$--B9-BarraTopo__Logo: var(--B9-SimboloLogoTopoMenor) !default;
+$--B9-BarraTopo__Busca__Texto: var(--B9-Cor--Branco) !default;
+$--B9-BarraTopo__Busca__Fundo: var(--B9-Cor--Terciaria) !default;
+$--B9-BarraTopo__BotaoBusca__Fundo: var(--B9-Cor--Primaria) !default;
+$--B9-BarraTopo__BotaoBusca__Texto: var(--B9-Cor--OffWhite) !default;
+
+// Barra menu principal
+$--B9-MenuPrincipal__Display: block !default;
+$--B9-MenuPrincipal__Fundo: rgba(255, 255, 255, 0.1) !default;
+$--B9-MenuPrincipal__Fundo_Hover: rgba(255, 255, 255, 0.75) !default;
+$--B9-MenuPrincipal__Texto: var(--B9-Cor--Texto) !default;
+$--B9-MenuPrincipal__Seta: var(--B9-Cor--Primaria) !default;
+$--B9-MenuPrincipal__TextoHover: var(--B9-Cor--Primaria) !default;
+// Submenu 1
+$--B9-MenuPrincipal__Submenu__Fundo: var(--B9-Cor--Light) !default;
+$--B9-MenuPrincipal__Submenu__Borda: var(--B9-Cor--Cinza) !default;
+$--B9-MenuPrincipal__Submenu__Texto: var(--B9-Cor--Texto) !default;
+$--B9-MenuPrincipal__Submenu__TextoHover: var(--B9-Cor--Primaria) !default;
+// Submenu 2
+$--B9-MenuPrincipal__Submenu3__Fundo: var(--B9-Cor--Light) !default;
+$--B9-MenuPrincipal__Submenu3__Borda: var(--B9-Cor--Cinza) !default;
+$--B9-MenuPrincipal__Submenu3__Texto: var(--B9-Cor--Texto) !default;
+$--B9-MenuPrincipal__Submenu3__TextoHover: var(--B9-Cor--Primaria) !default;
+
+// Barra mobile
+$--B9-BarraMobile__Fundo: var(--B9-Cor--Primaria) !default;
+$--B9-BarraMobile__Texto: var(--B9-Cor--Branco) !default;
+$--B9-BarraMobile__Padding: 0 !default;
+$--B9-BarraMobile__Margin: 0 !default;
+$--B9-BarraMobile__BorderBottom: none !default;
+$--B9-BarraMobile__BorderRadius: 0 0 0.75rem 0.75rem !default;
+
+// Menu mobile
+$--B9-MenuMobile__Fundo: var(--B9-Cor--Branco) !default;
+$--B9-MenuMobile__Fundo_Nivel2: var(--B9-Cor--Light) !default;
+$--B9-MenuMobile__Titulo: var(--B9-Cor--Primaria) !default;
+$--B9-MenuMobile__Texto: var(--B9-Cor--Texto) !default;
+$--B9-MenuMobile__Borda: var(--B9-Cor--Primaria) !default;
+$--B9-MenuMobile__Botao_Fundo: var(--B9-Cor--Primaria) !default;
+$--B9-MenuMobile__Botao_Texto: var(--B9-Cor--Branco) !default;
+
+// Full banner
+$--B9-FullBanner_Altura-desktop: 600px !default;
+$--B9-FullBanner_Altura-mobile: 320px !default;
+$--B9-FullBanner_Altura-mobileSmall: 220px !default;
+$--B9-FullBanner_BorderRadius: 0 !default;
+$--B9-FullBanner_Margin: 0 auto !default;
+$--B9-FullBanner_MaxWidth: 100vw !default;
+
+// Mini banner
+$--B9-MiniBanner_Fundo: var(--B9-Cor--Branco) !default;
+
+// Banner tarja
+$--B9-BannerTarja_Fundo: var(--B9-Cor--Branco) !default;
+
+// Corpo
+$--B9-Corpo__Fundo: var(--B9-Cor--Branco) !default;
+
+// Listagem
+$--B9-Listagem--Produtos__Display: block !default;
+$--B9-Listagem--Produtos_PorLinha: 2 !default;
+$--B9-Listagem--Produtos_DuplaPorLinha: 2 !default;
+$--B9-Listagem--Titulo_Cor: var(--B9-Cor--Texto) !default;
+$--B9-Listagem--Subtitulo_Cor: var(--B9-Cor--Texto) !default;
+$--B9-Listagem--Titulo_BorderTop: 1px solid var(--B9-Cor--Light) !default;
+$--B9-Listagem--Titulo_ElementoApoio: var(--B9-ElementoApoio) no-repeat center center !default;
+$--B9-Listagem--Titulo_ElementoApoio_Content: "" !default;
+$--B9-Listagem--Titulo_ElementoApoio_Width: 1.25rem !default;
+$--B9-Listagem--Titulo_ElementoApoio_Height: 1.25rem !default;
+$--B9-Listagem--Produto__Titulo__Fonte: 1rem !default;
+$--B9-Listagem--Produto__Titulo__Fonte_Cor: var(--B9-Cor--Texto) !default;
+$--B9-Listagem--Produto__Titulo__Peso: 500 !default;
+$--B9-Listagem--Produto__BorderBottom: 1px solid var(--B9-Cor--Light) !default;
+$--B9-Listagem--BG: var(--B9-Cor--Fundo) !default;
+$--B9-Listagem--BoxShadow: 0 40px 30px -10px rgba(0, 0, 0, 0.05) !default;
+$--B9-Listagem--BoxShadow_Mobile: 0 0 30px -10px rgb(0, 0, 0, 0.2) !default;
+$--B9-Listagem--Imagem__BorderRadius: 8px !default;
+$--B9-Listagem--Destaques__BorderRadius: 0 0 0.5rem 0.5rem !default;
+$--B9-Listagem--Destaques__Padding: 0 !default;
+$--B9-Listagem--Destaques__Fundo: var(--B9-Cor--Light) !default;
+$--B9-Listagem--Destaques__Texto: var(--B9-Cor--Texto) !default;
+$--B9-Listagem--Destaques__Hover__Fundo: var(--B9-Cor--Primaria) !default;
+$--B9-Listagem--Destaques__Hover__Texto: var(--B9-Cor--Branco) !default;
+$--B9-Listagem--PrecoProduto__Fundo: var(--B9-Cor--Branco) !default;
+$--B9-Listagem--PrecoProduto__Texto: var(--B9-Cor--Texto) !default;
+$--B9-Listagem--PrecoProduto__Hover__Fundo: var(--B9-Cor--Light) !default;
+$--B9-Listagem--PrecoProduto__Hover__Texto: var(--B9-Cor--Texto) !default;
+$--B9-Listagem--Tag__Fundo-Padrao: var(--B9-Cor--Secundaria) !default;
+$--B9-Listagem--Tag__Fundo-Promocao: var(--B9-Cor--Primaria) !default;
+$--B9-Listagem--Tag__Fundo-Adicionado: var(--B9-Cor--Secundaria) !default;
+$--B9-Listagem--Tag__Fundo-FreteGratis: var(--B9-Cor--Terciaria) !default;
+//  Foto vertical
+$--B9-Listagem--Imagem_ObjectFit: cover !default;
+// $--B9-Listagem--Imagem_Altura_Desktop: 40rem !default;
+// $--B9-Listagem--Imagem_Altura_Tablet: 15rem !default;
+// $--B9-Listagem--Imagem_Altura_Mobile: 10rem !default;
+//  Foto quadrado responsiva
+$--B9-Listagem--Imagem_Altura_Desktop: auto !default;
+$--B9-Listagem--Imagem_Altura_Tablet: auto !default;
+$--B9-Listagem--Imagem_Altura_Mobile: auto !default;
+
+// Rodapé
+$--B9-Rodape__Fundo: var(--B9-Cor--Light) !default;
+$--B9-Rodape__Sombra: 0 1rem 4rem -2.4rem rgba(0, 0, 0, 0.2) !default;
+$--B9-Rodape__Padrao__Display: block !default;
+$--B9-Rodape__Padrao__URL: url("https://cdn.awsli.com.br/1606/1606323/arquivos/pattern_random.svg") !default;
+$--B9-Rodape__Padrao__Fundo: var(--B9-Cor--Secundaria) !default;
+$--B9-Rodape__Padrao__Fundo_Tamanho: 350px !default;
+$--B9-Rodape__Padrao__Height: 50vh !default;
+$--B9-Rodape__UltimaLinha_Fundo: rgb(var(--B9-Cor--Preto)) !default;
+$--B9-Rodape__UltimaLinha_Texto: var(--B9-Cor--Light) !default;
+$--B9-Rodape__UltimaLinha_Link: var(--B9-Cor--Light) !default;
+
+// Institucional rodapé
+$--B9-Rodape__Institucional__Fundo: var(--B9-Cor--Branco) !default;
+$--B9-Rodape__Institucional__Titulo: var(--B9-Cor--Escuro) !default;
+$--B9-Rodape__Institucional__Titulo_ElementoApoio: var(--B9-ElementoApoio) no-repeat left center !default;
+$--B9-Rodape__Institucional__Titulo_ElementoApoio_Content: "" !default;
+$--B9-Rodape__Institucional__Titulo_ElementoApoio_Width: 1.25rem !default;
+$--B9-Rodape__Institucional__Titulo_ElementoApoio_Height: 1.25rem !default;
+$--B9-Rodape__Institucional__Titulo_ElementoApoio_Transform: translate(4px, -4px) !default;
+$--B9-Rodape__Institucional__Borda: var(--B9-Cor--Light) !default;
+$--B9-Rodape__Institucional__Texto: rgb(var(--B9-Cor--Preto)) !default;
+$--B9-Rodape__Institucional__Botao__Texto: var(--B9-Cor--Branco) !default;
+$--B9-Rodape__Institucional__Botao__Fundo: var(--B9-Cor--Secundaria) !default;
+
+// Produtos
+$--B9-Produto__Variacoes__Fundo: var(--B9-Cor--Light) !default;
+$--B9-Produto__Variacoes__Texto_Cor: var(--B9-Cor--Texto) !default;
+$--B9-Produto__Variacoes__Fundo_Ativo: var(--B9-Cor--Secundaria) !default;
+$--B9-Produto__Variacoes__Texto_Cor_Ativo: var(--B9-Cor--Light) !default;
+$--B9-Produto__Variacoes__BorderRadius: 1rem !default;
+$--B9-Produto__Preco-Promocional: var(--B9-Cor--Primaria);
+$--B9-Produto__Thumbs-BorderColor-Ativo: var(--B9-Cor--Primaria);
+
+// Padrão produtos
+$--B9-Produto__Titulo__FontSize__Desktop: 1.75rem;
+$--B9-Produto__Titulo__FontSize__Mobile: 1.5rem;
+$--B9-Produto__Titulo__FontWeight: 600;
+$--B9-Produto__Titulo__Color: var(--B9-Cor--Primaria);
+$--B9-Produto__Container_BoxShadow: 0rem 0rem 16rem -3.5rem rgb(0 0 0 / 15%) !default;
+$--B9-Produto__Container_MaxHeight: 75vh !default;
+$--B9-Produto__Padrao__Fundo: var(--B9-Cor--OffWhite) !default;
+$--B9-Produto__Padrao__Sobreposicao_Cor: var(--B9-Cor--OffWhite) !default;
+$--B9-Produto__Padrao__Sobreposicao_Opacidade: 0.95 !default;
+$--B9-Produto__Padrao__URL: url("https://cdn.awsli.com.br/1606/1606323/arquivos/pattern_random.svg") !default;
+$--B9-Produto__Padrao__Fundo_Tamanho: 20rem !default;

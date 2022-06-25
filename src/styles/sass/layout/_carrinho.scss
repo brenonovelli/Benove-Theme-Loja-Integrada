@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: center;
     margin-left: auto;
+    box-shadow: var(--B9-Cabecalho__Carrinho__Shadow);
+    background: var(--B9-Cabecalho__Carrinho__Quantidade_Fundo);
     border-radius: 2rem;
 
     @include media-breakpoint-up(lg) {
@@ -48,6 +50,7 @@
     strong {
       color: var(--B9-Cabecalho__Carrinho__Quantidade_Texto) !important;
       background: var(--B9-Cabecalho__Carrinho__Quantidade_Fundo);
+      box-shadow: var(--B9-Cabecalho__Carrinho__Shadow);
       margin: 0 8px 0 0;
       font-size: 20px;
       font-weight: 900;
@@ -61,20 +64,27 @@
       padding: 0 16px 0 10px;
     }
 
-    span {
-      color: var(--B9-Cabecalho__Texto);
+    // Texto "produto adicionado"
+    > span {
+      color: var(--B9-Cabecalho__Carrinho__Quantidade_Texto);
       white-space: nowrap;
       font-size: 12px;
-      padding: 0;
+      padding: 0 1rem 0 0 !important;
 
-      b {
-        color: var(--B9-Cabecalho__Texto) !important;
+      b,
+      span {
+        color: var(--B9-Cabecalho__Carrinho__Quantidade_Texto) !important;
       }
     }
   }
 
   .vazio-text {
-    margin-left: 1rem !important;
+    padding: 0 1rem !important;
+    color: var(--B9-Cor--Primaria) !important;
+    background: rgba(255, 255, 255, 0.85);
+    margin: 0 !important;
+    height: 38px;
+    border-radius: 0 2rem 2rem 0;
   }
 
   .carrinho-interno {
@@ -92,6 +102,7 @@
 
     .botao.principal {
       background-color: var(--B9-Cabecalho__Carrinho__BotaoInterno);
+      color: var(--B9-Cor--Branco);
 
       .icon-shopping-cart {
         // height: 24px;
@@ -184,6 +195,13 @@
         border: none;
       }
 
+      li {
+        background-color: var(--B9-Cor--Branco);
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        line-height: 1;
+      }
+
       a {
         color: var(--B9-Cabecalho__Texto);
       }
@@ -197,7 +215,7 @@
   #corpo {
     .conteiner {
       padding: 1rem;
-      max-width: 1140px;
+      max-width: 1600px;
       box-shadow: none !important;
 
       .finalizar-compra {
@@ -236,18 +254,24 @@
             border-radius: 2rem;
             transition: 0.3s ease-in-out all;
 
+            @include media-breakpoint-between(md, md) {
+              td {
+                padding: 1rem 10px;
+              }
+            }
+
             &:not(.bg-dark) {
-              @include media-breakpoint-up(md) {
-                box-shadow: 0 1rem 4rem -2.5rem rgba(0, 0, 0, 0);
+              @include media-breakpoint-up(sm) {
+                border-bottom: 1px solid var(--B9-Cor--Light);
               }
 
-              @include media-breakpoint-down(md) {
+              @include media-breakpoint-down(sm) {
                 box-shadow: 0 1rem 4rem -2.5rem rgba(0, 0, 0, 0.5);
               }
 
-              &:hover {
-                box-shadow: 0 1rem 4rem -2.5rem rgba(0, 0, 0, 0.5);
-              }
+              // &:hover {
+              //   box-shadow: 0 1rem 4rem -2.5rem rgba(0, 0, 0, 0.5);
+              // }
             }
 
             &.bg-dark {
@@ -265,12 +289,19 @@
 
             td {
               &.conteiner-imagem {
+                display: flex;
+
                 .imagem {
                   width: 8rem;
                   height: 8rem;
                   border-radius: 50%;
                   overflow: hidden;
                   margin: 0 auto;
+
+                  @include media-breakpoint-down(md) {
+                    width: 4rem;
+                    height: 4rem;
+                  }
 
                   img {
                     max-width: none;
@@ -283,7 +314,24 @@
               }
             }
 
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-between(md, md) {
+              .quantidade {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                > a {
+                  padding: 0.5rem;
+                }
+
+                > input {
+                  order: -1;
+                  flex: 1 1 100%;
+                }
+              }
+            }
+
+            @include media-breakpoint-down(sm) {
               position: relative;
 
               &:not(:last-child):not(:nth-last-child(2)) {
@@ -363,7 +411,7 @@
               }
 
               .quantidade {
-                button {
+                button:not(.atualizar-quantidade) {
                   display: block;
                   margin: 1rem auto 0;
                 }
@@ -378,20 +426,27 @@
 
         .produto-info {
           a {
-            font-weight: 700;
-            padding-bottom: 0.5rem;
-            margin-bottom: 0.5rem;
-            border-bottom: 1px solid var(--B9-Cor--Cinza);
             display: flex;
-            justify-content: center;
+
+            font-weight: 700;
+            padding-bottom: 4px;
+            margin-bottom: 4px;
+            font-size: 13px;
+            border-bottom: 1px solid var(--B9-Cor--Cinza);
+            line-height: 1;
+
+            @include media-breakpoint-down(sm) {
+              justify-content: center;
+            }
           }
 
           ul {
-            font-size: 0.875rem;
-            color: rgba(var(--B9-Cor--Escuro), 0.6);
+            color: var(--B9-Cor--Texto);
+            font-size: 12px;
+            font-weight: normal;
+
             li {
               text-align: left;
-              margin-bottom: 0.25rem;
 
               .atributo-cor-carrinho {
                 border-radius: 50%;
@@ -411,7 +466,7 @@
       }
 
       .acao-editar {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(sm) {
           .span12 {
             display: flex;
             flex-direction: column-reverse;
@@ -649,5 +704,27 @@
   span,
   li {
     color: rgb(var(--B9-Cor--Preto));
+  }
+}
+
+// Ajuste carrinho ajax popup
+#carrinho-mini {
+  .tabela-carrinho {
+    h6 {
+      line-height: 1;
+    }
+    .produto-info {
+      text-align: left;
+      font-size: 12px;
+      line-height: 1;
+      font-weight: normal;
+    }
+
+    .preco-produto {
+      .preco-promocional {
+        white-space: nowrap;
+        font-size: 12px;
+      }
+    }
   }
 }
