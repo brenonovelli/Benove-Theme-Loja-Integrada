@@ -1,0 +1,21 @@
+@import "../../variables/art-skate";
+
+$theme-name: "artSkate";
+
+body {
+  @include css-vars;
+
+  .logo {
+    a {
+      position: relative;
+      display: block;
+      background: url("https://cdn.awsli.com.br/2427/2427948/arquivos/logo_art_skate.png") no-repeat center center;
+      background-size: contain;
+      mix-blend-mode: unset;
+
+      img {
+        opacity: 0;
+      }
+    }
+  }
+}

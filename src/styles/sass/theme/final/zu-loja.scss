@@ -1,0 +1,21 @@
+@import "../../variables/zu-loja";
+
+$theme-name: "zuloja";
+
+body {
+  @include css-vars;
+
+  .logo {
+    a {
+      position: relative;
+      display: block;
+      background: url("https://cdn.awsli.com.br/1401/1401748/arquivos/zu_loja_logo.png") no-repeat center center;
+      background-size: contain;
+      mix-blend-mode: unset;
+
+      img {
+        opacity: 0;
+      }
+    }
+  }
+}

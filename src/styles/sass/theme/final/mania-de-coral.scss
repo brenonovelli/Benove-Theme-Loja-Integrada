@@ -1,0 +1,21 @@
+@import "../../variables/mania-de-coral";
+
+$theme-name: "maniaDeCoral";
+
+body {
+  @include css-vars;
+
+  .logo {
+    a {
+      position: relative;
+      display: block;
+      background: url("https://cdn.awsli.com.br/1080x720/1944/1944627/logo/ac8c167d64.png") no-repeat center center;
+      background-size: contain;
+      mix-blend-mode: unset;
+
+      img {
+        opacity: 0;
+      }
+    }
+  }
+}

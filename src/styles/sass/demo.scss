@@ -5,12 +5,14 @@
 @import "extras/breakpoints";
 
 // Vars
-@import "variables/"; // Load all default variables
-@import "variables/theme.scss"; // Load selected variables
+@import "variables/"; // Load all variables
+
+// Imports
+@import "tools"; // Tools for show multiples themes
 
 // Thene
 @import "theme"; // Base theme
-@import "theme/final/theme"; //Load selected theme
+@import "theme/examples"; //Examples themes
 
 // All code
 @import "layout/layout";

@@ -1,0 +1,21 @@
+@import "../../variables/adidas";
+
+$theme-name: "adidas";
+
+body {
+  @include css-vars;
+
+  .logo {
+    a {
+      position: relative;
+      display: block;
+      background: url("https://cdn.awsli.com.br/1606/1606323/arquivos/adidas-logo.svg") no-repeat center center;
+      background-size: contain;
+      mix-blend-mode: multiply;
+
+      img {
+        opacity: 0;
+      }
+    }
+  }
+}

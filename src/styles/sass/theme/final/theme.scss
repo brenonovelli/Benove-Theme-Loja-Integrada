@@ -1,0 +1,20 @@
+@import "../../variables/theme";
+
+body {
+  @include css-vars;
+
+  .logo {
+    a {
+      position: relative;
+      display: block;
+      background: url(https://raw.githubusercontent.com/brenonovelli/brenonovelli/master/assets/b.logo.gif) no-repeat
+        center center;
+      background-size: contain;
+      mix-blend-mode: multiply;
+
+      img {
+        opacity: 0;
+      }
+    }
+  }
+}
