@@ -3,6 +3,9 @@ Este tema é desenvolvido para ser usado em lojas da Loja Integrada. Ele conta c
 
 Exemplo: https://benove.lojaintegrada.com.br/
 
+# Tópico na comunidade para debate sobre o tema
+https://comunidade.lojaintegrada.com.br/t/open-source-tema-benove/83387
+
 # Todo
 [ ] Vídeo sobre o tema      
 [ ] Separar e detalhar cada script      
