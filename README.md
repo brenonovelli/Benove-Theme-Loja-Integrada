@@ -6,18 +6,22 @@ Exemplo: https://benove.lojaintegrada.com.br/
 # Open source
 O uso deste tema não tem custo algum. Faça bom uso. Seja lojista para alavancar sua loja ou desenvolvedor para aprender como manipular sistemas prontos usando manipulação do DOM.
 
-O código está aberto para melhoria. E tem muito para melhorar. Novos exemplos de tema são bem-vindos também.
+O código está aberto para melhorias e tem muito para melhorar. Novos exemplos de tema são bem-vindos também.
 
 # Como fazer? Trilha leigo e desenvolvedor
 Todo código gerado aqui pode ser colado na seção de estilo CSS na Loja Integrada.
 
 ## 👶 Leigo - Não entendo nada de programação
-Acesse a pasta `dist` copie o arquio `styles.css` e edite as variáveis deles
+1. Acesse a pasta `dist` copie o arquio `styles.css` e edite as variáveis css.
+   1. Todas as várias tem esse formato: `--NOME-DA-VARIÁVEL: VALOR;` Por exemplo, com esta seguir setamos nossa cor primária: `--B9-Cor--Primaria: #011016;`
+2. Acesse a pasta `dist` copie o conteúdo do arquivo `benove_script.js`. No painel da sua loja, inclua um novo HTML como JavaScript.
 
 ## 🥷 Dev - Entendo um pouco de programação
+1. Acesse a pasta `dist` copie o conteúdo do arquivo `benove_script.js`. No painel da sua loja, inclua um novo HTML como JavaScript.
+2. Editar CSS via SASS
 > Você precisar do SASS para gerar o código final. Uma rápida busca no YouTube você achará como instalar.
 
-Acesse a pasta `styles/sass/variables` e edite o arquivo `theme.scss`.   
+Acesse a pasta `src/styles/sass/variables` e edite o arquivo `theme.scss`.   
 **Quer editar ainda mais?** Acesse a pasta `styles/sass/theme` e edite o arquivo `theme.scss`.
 
     Em breve teremos mais conteúdo por escrito e vídeo sobre como utilizar e editar o tema.
@@ -36,3 +40,16 @@ $ sass --watch src/styles/sass/styles.scss dist/styles.css
 ```shell
 $ sass --watch src/styles/sass/demo.scss dist/demo.css
 ```
+
+
+## Configurações no painel visual da loja
+![](.github/img/img01.png.png)
+![](.github/img/img02.png.png)
+![](.github/img/img03.png.png)
+![](.github/img/img04.png.png)
+![](.github/img/img05.png.png)
+![](.github/img/img06.png.png)
+![](.github/img/img07.png.png)
+![](.github/img/img08.png.png)
+![](.github/img/img09.png.png)
+![](.github/img/img10.png.png)
