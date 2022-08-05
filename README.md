@@ -3,6 +3,11 @@ Este tema é desenvolvido para ser usado em lojas da Loja Integrada. Ele conta c
 
 Exemplo: https://benove.lojaintegrada.com.br/
 
+# Todo
+[ ] Vídeo sobre o tema      
+[ ] Separar e detalhar cada script      
+[ ] Escrever sobre opções de configurações
+
 # Open source
 O uso deste tema não tem custo algum. Faça bom uso. Seja lojista para alavancar sua loja ou desenvolvedor para aprender como manipular sistemas prontos usando manipulação do DOM.
 
@@ -54,3 +59,41 @@ PIX: breno+ajudas@breno.com.br
 ![](.github/img/img08.png)          
 ![](.github/img/img09.png)          
 ![](.github/img/img10.png)          
+
+# Como criar um banner que se adapte a qualquer tamanho de tela.
+Usar o gabarito abaixo. Faça uma imagem com 1920x600, pode ser em 2k ou 4k, e ponha todo conteúdo crucial dentro de 800x600 no meio da imagem. Lembre-se de manter a imagem com no máximo 500kb.
+![](.github/img/guia_banner.jpg)          
+![](.github/img/GridBanner.png)          
+
+## Alguns exemplos de banner:
+
+![](.github/img/banners/00.blackNovember.png)
+![](.github/img/banners/01.CariocadaGema.jpg)
+![](.github/img/banners/02.CariocadaGema.jpg)
+![](.github/img/banners/01.fullbanner_brisa.jpg)
+![](.github/img/banners/02.fullbanner_brisa.jpg)
+![](.github/img/banners/03.fullbanner_brisa.jpg)
+![](.github/img/banners/04.fullbanner_brisa.jpg)
+![](.github/img/banners/05.fullbanner_brisa.jpg)
+![](.github/img/banners/06.fullbanner_brisa.jpg)
+![](.github/img/banners/07.fullbanner_brisa.jpg)
+![](.github/img/banners/08.fullbanner_brisa.jpg)
+![](.github/img/banners/09.fullbanner_brisa.jpg)
+![](.github/img/banners/10.fullbanner_brisa.jpg)
+![](.github/img/banners/00FreeSpiritCapa.jpg)
+![](.github/img/banners/01.FreeSpirit.jpg)
+![](.github/img/banners/02.FreeSpirit.jpg)
+![](.github/img/banners/03.FreeSpirit.jpg)
+![](.github/img/banners/04.FreeSpirit.jpg)
+![](.github/img/banners/05.FreeSpirit.jpg)
+![](.github/img/banners/06.FreeSpirit.jpg)
+![](.github/img/banners/07.FreeSpirit.jpg)
+![](.github/img/banners/00.fullbanner_amazonia-capa.jpg)
+![](.github/img/banners/04.fullbanner_amazonia-vestido_afeto.jpg)
+![](.github/img/banners/05.fullbanner_amazonia-kimono_biodiversidade.jpg)
+![](.github/img/banners/06.fullbanner_amazonia-saia_vestido_coqueiro.jpg)
+![](.github/img/banners/07.fullbanner_amazonia-macacao_desmatamento.jpg)
+![](.github/img/banners/08.fullbanner_amazonia-blusa_afeto.jpg)
+![](.github/img/banners/01.fullbanner_amazonia-blusao_terra.jpg)
+![](.github/img/banners/02.fullbanner_amazonia-blusa_sol.jpg)
+![](.github/img/banners/03.fullbanner_amazonia-vestido_liberdade.jpg)
