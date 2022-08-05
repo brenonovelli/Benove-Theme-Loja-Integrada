@@ -43,13 +43,13 @@ $ sass --watch src/styles/sass/demo.scss dist/demo.css
 
 
 ## Configurações no painel visual da loja
-![](.github/img/img01.png.png)
-![](.github/img/img02.png.png)
-![](.github/img/img03.png.png)
-![](.github/img/img04.png.png)
-![](.github/img/img05.png.png)
-![](.github/img/img06.png.png)
-![](.github/img/img07.png.png)
-![](.github/img/img08.png.png)
-![](.github/img/img09.png.png)
-![](.github/img/img10.png.png)
+![](.github/img/img01.png)
+![](.github/img/img02.png)
+![](.github/img/img03.png)
+![](.github/img/img04.png)
+![](.github/img/img05.png)
+![](.github/img/img06.png)
+![](.github/img/img07.png)
+![](.github/img/img08.png)
+![](.github/img/img09.png)
+![](.github/img/img10.png)
