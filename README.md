@@ -11,6 +11,8 @@ O código está aberto para melhorias e tem muito para melhorar. Novos exemplos 
 # Como fazer? Trilha leigo e desenvolvedor
 Todo código gerado aqui pode ser colado na seção de estilo CSS na Loja Integrada.
 
+    Em breve teremos mais conteúdo por escrito e vídeo sobre como utilizar e editar o tema.
+
 ## 👶 Leigo - Não entendo nada de programação
 1. Acesse a pasta `dist` copie o arquio `styles.css` e edite as variáveis css.
    1. Todas as várias tem esse formato: `--NOME-DA-VARIÁVEL: VALOR;` Por exemplo, com esta seguir setamos nossa cor primária: `--B9-Cor--Primaria: #011016;`
@@ -24,12 +26,7 @@ Todo código gerado aqui pode ser colado na seção de estilo CSS na Loja Integr
 Acesse a pasta `src/styles/sass/variables` e edite o arquivo `theme.scss`.   
 **Quer editar ainda mais?** Acesse a pasta `styles/sass/theme` e edite o arquivo `theme.scss`.
 
-    Em breve teremos mais conteúdo por escrito e vídeo sobre como utilizar e editar o tema.
-
-# Quer contribuir com o trabalho?
-PIX: breno+ajudas@breno.com.br
-
-# SASS
+# Comandos SASS
 
 ## Build final version
 ```shell
@@ -41,15 +38,19 @@ $ sass --watch src/styles/sass/styles.scss dist/styles.css
 $ sass --watch src/styles/sass/demo.scss dist/demo.css
 ```
 
+# Quer contribuir com o trabalho?
+PIX: breno+ajudas@breno.com.br
 
-## Configurações no painel visual da loja
-![](.github/img/img01.png)
-![](.github/img/img02.png)
-![](.github/img/img03.png)
-![](.github/img/img04.png)
-![](.github/img/img05.png)
-![](.github/img/img06.png)
-![](.github/img/img07.png)
-![](.github/img/img08.png)
-![](.github/img/img09.png)
-![](.github/img/img10.png)
+
+# Configurações no painel visual da loja
+![](.github/img/img01.png)          
+![](.github/img/img02.png)          
+![](.github/img/img03.png)          
+![](.github/img/img04.png)          
+![](.github/img/img05.png)          
+![](.github/img/img06.png)          
+> Ao usar dois produtos por linha teremos uma qualidade melhor das imagens. O script junto com o css fazem o trabalhao de trazer 4 por linha novamente.  
+![](.github/img/img07.png)          
+![](.github/img/img08.png)          
+![](.github/img/img09.png)          
+![](.github/img/img10.png)          
